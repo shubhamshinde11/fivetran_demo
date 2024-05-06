@@ -1,6 +1,6 @@
 name: fivetran_demo
 description: ''
-version: 0.0.1
+version: v1
 author: shubham@cloudaeon.net
 language: python
 buildSystem: ''
