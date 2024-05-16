@@ -1,0 +1,1907 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1"
+    },
+    "codeGenConfiguration" : {
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "7.1.95",
+        "pyPiVersion" : "1.8.15"
+      }
+    },
+    "id" : "1",
+    "uri" : "pipelines/pl_forecasting_gold",
+    "pipelineSettingsInfo" : {
+      "applicationName" : "pl_forecasting_gold",
+      "hasApplication" : true
+    },
+    "language" : "python",
+    "fabricId" : "11913",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "shubhamcloudaeonnetteam.fivetranpropecytransformation.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "12654",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "12655",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "pl_forecasting_gold",
+    "configurationVersion" : "v2"
+  },
+  "connections" : [ {
+    "id" : "xDrgEIerv5XeZ96aaJ5SB",
+    "source" : "fEjQF1orFivL3sZJzdHcP$$f3uAy3kRpEeBFMF-oDUnH",
+    "sourcePort" : "clpsOb4RzYEFErqrxyKaL$$OBmIOnVFVJFbLz7kMYkFM",
+    "target" : "syPgmNth9gCtWAKd5KcZj$$SLaF-Ky4kOtsOIBYE5xVZ",
+    "targetPort" : "ov_bqDblgULR2d7Wjhkat$$qbix2QEcaE_qnYlZ275SK"
+  }, {
+    "id" : "uMhRyMFpfMVDh2I87JUew$$EcvLuVL7n-JF2sOR5lfki",
+    "source" : "dUCVeOpPVBl9h5QLOtGY8$$mW9aF6DT0mB0knIC-WHBN",
+    "sourcePort" : "sbxv9yaEKfptWtMI3g-C4$$LLp2_EiqHxIUiCqzfqEMP",
+    "target" : "fEjQF1orFivL3sZJzdHcP$$f3uAy3kRpEeBFMF-oDUnH",
+    "targetPort" : "ObJ_F8otJs6CXgwk86yow$$563chYN4FId7sTM8ibrZm"
+  }, {
+    "id" : "r4rMS4P4mi7sbS6K0__o4$$9CEjGZTYMwqLcPJNahPMU",
+    "source" : "yL5ryiQU6cfu9kxb4pK-F$$_h-KaftmTzDXzrMcRBYLZ",
+    "sourcePort" : "zWuv8VLKzNYP5wnUshoz1$$piXlKtPpIdSwr7xhS397m",
+    "target" : "AI4KQ0Tk_FmS932WiIHcH$$E7ZbHKWecL0KmmwyBeGmV",
+    "targetPort" : "6b6W-oyrh4xaVJ-zBBDXb$$Tv7VU7OBrean9RDJ_AZyg"
+  }, {
+    "id" : "NroIx2G9q7BC5fqQgadS2$$1vd-M6ZBYzPnUKNswOvUU",
+    "source" : "3nV8TsRmDERlXfYg_vraz$$83HfQADnCiJv3zq7bFM0l",
+    "sourcePort" : "XFDG8XXk6B1eANab3FA21$$k9l87Uu-42Revc5ra-o1y",
+    "target" : "PBVuSen2PvPmjNin5JWQV$$F0SyUDEPOPgV3cK-7p2Dw",
+    "targetPort" : "rIeUsVcM2kvdEStWanEr4$$EAYww56V6FDwvWT5916JM"
+  }, {
+    "id" : "wcy81L7c1G3oFsbvt4Jq7$$vgF5Sw-_i886QUMJI532f",
+    "source" : "29HgAyqtabvwxmCiLUR4-$$3wWcxU77l5yXkPAkctEGN",
+    "sourcePort" : "jFflc0MjsuIdKpRy8ych7$$SzKsOjRYul5vodpu6y5xf",
+    "target" : "WShhdDsjTgB8BHNtD-QX6$$FFrBo3r8xAGis3utKzPcm",
+    "targetPort" : "2oiGVEpYwvMsUDJW2ZQ-z$$w9ozs6LqDvsl79JjK_zGG"
+  }, {
+    "id" : "IezzH3zvjB14CPF5ImeTZ$$e6m14MtJOqznYsTRcU_MF",
+    "source" : "MFkE3UIpzKTn11RFsRaZV$$LM86ZNZ8_SjSSYycFNq28",
+    "sourcePort" : "VnIrYSVX4-V9nk7bpW7fz$$gntiQgfEP1SrJdRTn6mKB",
+    "target" : "-yS7pzB2vPPbuJzelyDMT$$QADb-PKs5MHZtlmwwWBbz",
+    "targetPort" : "3A2XH7hrDj-VjCxBTcTZk$$kopc6KwMLq6yX_T77oX8E"
+  }, {
+    "id" : "VM4HnEVQhqeh4_sIDJzx2",
+    "source" : "ht2uOF7ZeCAFh9JBgP3aE$$QlJLdlFe55EAzSw3nUwV9",
+    "sourcePort" : "w0BPcfxIh_H12PtcipGV9$$KLyRvh4WKlbwXVMMNWEGm",
+    "target" : "6nwLE9G4CfJjIj3oEA0sw$$6JI2ukxnrZF5KG7cwLjp-",
+    "targetPort" : "wC6ZD2c_lo1eHGQep6AUp$$RPkbHsdhctEu5Le1dv3yl"
+  }, {
+    "id" : "J55-Ppex3fngS3S_dZXSD$$eIrE9hywMUCXv0EYl-4bh",
+    "source" : "W0bXjlwG4B1QdiZbbBr2L$$lJEiLvRF-keM5OhKBSDF7",
+    "sourcePort" : "HC562pRsLSfxhGUzu7vJu$$2ncSUlKXqeoWEqCGMd0il",
+    "target" : "nBS89bcaK7cAvAYqcxqst$$rOK3Qgk9J6ayuo9vmaAXX",
+    "targetPort" : "fNDyboGm2Wszf4r7a7Wey$$HajoYUKhQBKe1rlk2KwAF"
+  }, {
+    "id" : "y0PukDBpD0m4DzGe_o3zB$$7zwxTB-R3AkOgfBG7y6jM",
+    "source" : "AI4KQ0Tk_FmS932WiIHcH$$E7ZbHKWecL0KmmwyBeGmV",
+    "sourcePort" : "uCSgNJjwq5hhrETDhZpyq$$5DwcrkLgH62iPXJKE6miu",
+    "target" : "XlawGEWt3yxRlcG0-9BvC$$I8FQyKyHvSGAZh397B55-",
+    "targetPort" : "ygjR6LInD8h4_AK8TZZCb$$rN_zMMl3vC8CIw91egpRx"
+  }, {
+    "id" : "sstyN2zBRNZwyHdSBdeRo$$FC8GHa0SVYFS5l3acD9nV",
+    "source" : "PBVuSen2PvPmjNin5JWQV$$F0SyUDEPOPgV3cK-7p2Dw",
+    "sourcePort" : "iKHgKsdhMrugaWpCvcxCc$$XlTvWaw2sOVufwZLm-wQh",
+    "target" : "hausrH7wo8SBT0mH_YjXz$$tcFRBmM_5W2rT0NB6cirN",
+    "targetPort" : "ECKx60d7eGOFjXC6ZN3ED$$HJ4EQkarHLALpupivusIk"
+  }, {
+    "id" : "UWDHrLDtwpErRznMPos5m$$mpy4P2UyZdUdEq2JCpK-d",
+    "source" : "WShhdDsjTgB8BHNtD-QX6$$FFrBo3r8xAGis3utKzPcm",
+    "sourcePort" : "g65_Hy2Kn_Y3IEK5qVkwY$$HaoG5B3v2opedggLeXtl2",
+    "target" : "WcNdO94ChDxlh-qUT4QUX$$LVdzzaA0Mrs1F6lQ5HkNo",
+    "targetPort" : "EYt29spbQrO35OTI1S5X9$$9yqcD6Q6vLr4HKueeeiNu"
+  }, {
+    "id" : "w0hEw-6lRirfUbV2tPv1Q$$ddzXq_tCWtoBDJr7f7_Us",
+    "source" : "-yS7pzB2vPPbuJzelyDMT$$QADb-PKs5MHZtlmwwWBbz",
+    "sourcePort" : "FkevUICF2T3-_FVoZvHqj$$LO3rmTdPEaM4uMIKHEbIH",
+    "target" : "vLgXSZqSLYh4nzRBGS1Ec$$PJ6zBKm-Jvj9_PJXOOSV_",
+    "targetPort" : "vWq8XrzQBufsibl2lvlED$$Lh4cne1nazDmQBq-3QXWZ"
+  }, {
+    "id" : "cOisnqUCiyNHzHj6UXpi3$$itqjIVlrRoODRbkwQTkdp",
+    "source" : "6nwLE9G4CfJjIj3oEA0sw$$6JI2ukxnrZF5KG7cwLjp-",
+    "sourcePort" : "cNElut7U7gmry1_XlrJWw$$MSWgqgURm0NqldhOINkip",
+    "target" : "WcN1lI58mxhLdRTIpao8p$$VmM-nF4nb8jLH4zf3rlQy",
+    "targetPort" : "s8VIhRP_h0YCDP7RyW0Ig$$Menb7eL7HmHnwYi1XbpxH"
+  }, {
+    "id" : "gsEgFHg6Kvl5-DrV0fJpW$$CW6kjuHoUfw4qy-fyOFKs",
+    "source" : "nBS89bcaK7cAvAYqcxqst$$rOK3Qgk9J6ayuo9vmaAXX",
+    "sourcePort" : "YMIGr5Lo6kJv6UoGHAO2D$$Kje8CbQq_nYn2YtyXZ-bp",
+    "target" : "8Mn7S2t5h5YMk_A2krhMk$$joavbtoRtPe1l-OtanEmn",
+    "targetPort" : "2YOSLe1w1wfNyW2OJOOAD$$XpTlAvny8XziQg66oMFjl"
+  } ],
+  "processes" : {
+    "yL5ryiQU6cfu9kxb4pK-F$$_h-KaftmTzDXzrMcRBYLZ" : {
+      "id" : "yL5ryiQU6cfu9kxb4pK-F$$_h-KaftmTzDXzrMcRBYLZ",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_source_sg_train",
+        "slug" : "ds_source_sg_train",
+        "x" : -2020,
+        "y" : -140,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "zWuv8VLKzNYP5wnUshoz1$$piXlKtPpIdSwr7xhS397m",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ds_source_sg_train"
+      }
+    },
+    "PBVuSen2PvPmjNin5JWQV$$F0SyUDEPOPgV3cK-7p2Dw" : {
+      "id" : "PBVuSen2PvPmjNin5JWQV$$F0SyUDEPOPgV3cK-7p2Dw",
+      "component" : "Deduplicate",
+      "metadata" : {
+        "label" : "deduplicated_data_4",
+        "slug" : "deduplicated_data_4",
+        "x" : -1800,
+        "y" : 0,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "rIeUsVcM2kvdEStWanEr4$$EAYww56V6FDwvWT5916JM",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "_file",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_line",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_modified",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_fivetran_synced",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "store_nbr",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "transactions",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "iKHgKsdhMrugaWpCvcxCc$$XlTvWaw2sOVufwZLm-wQh",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "dedupColumns" : [ ],
+        "dedupType" : "distinct",
+        "columnsSelector" : [ ],
+        "orders" : [ ],
+        "useOrderBy" : false
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.12&projectSubscriptionProjectId=12654&path=gems/Deduplicate",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "29HgAyqtabvwxmCiLUR4-$$3wWcxU77l5yXkPAkctEGN" : {
+      "id" : "29HgAyqtabvwxmCiLUR4-$$3wWcxU77l5yXkPAkctEGN",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_source_sg_test",
+        "slug" : "ds_source_sg_test",
+        "x" : -2020,
+        "y" : -260,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "jFflc0MjsuIdKpRy8ych7$$SzKsOjRYul5vodpu6y5xf",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ds_source_sg_test"
+      }
+    },
+    "WShhdDsjTgB8BHNtD-QX6$$FFrBo3r8xAGis3utKzPcm" : {
+      "id" : "WShhdDsjTgB8BHNtD-QX6$$FFrBo3r8xAGis3utKzPcm",
+      "component" : "Deduplicate",
+      "metadata" : {
+        "label" : "deduplicated_data_3",
+        "slug" : "deduplicated_data_3",
+        "x" : -1800,
+        "y" : -260,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "2oiGVEpYwvMsUDJW2ZQ-z$$w9ozs6LqDvsl79JjK_zGG",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "_file",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_line",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_modified",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_fivetran_synced",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "store_nbr",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "family",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "onpromotion",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "g65_Hy2Kn_Y3IEK5qVkwY$$HaoG5B3v2opedggLeXtl2",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "dedupColumns" : [ ],
+        "dedupType" : "distinct",
+        "columnsSelector" : [ ],
+        "orders" : [ ],
+        "useOrderBy" : false
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.12&projectSubscriptionProjectId=12654&path=gems/Deduplicate",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "-yS7pzB2vPPbuJzelyDMT$$QADb-PKs5MHZtlmwwWBbz" : {
+      "id" : "-yS7pzB2vPPbuJzelyDMT$$QADb-PKs5MHZtlmwwWBbz",
+      "component" : "Deduplicate",
+      "metadata" : {
+        "label" : "deduplicated_data_2",
+        "slug" : "deduplicated_data_2",
+        "x" : -1800,
+        "y" : -400,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "3A2XH7hrDj-VjCxBTcTZk$$kopc6KwMLq6yX_T77oX8E",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "_file",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_line",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_modified",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_fivetran_synced",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "store_nbr",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "city",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "state",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "type",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "cluster",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "FkevUICF2T3-_FVoZvHqj$$LO3rmTdPEaM4uMIKHEbIH",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "dedupColumns" : [ ],
+        "dedupType" : "distinct",
+        "columnsSelector" : [ ],
+        "orders" : [ ],
+        "useOrderBy" : false
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.12&projectSubscriptionProjectId=12654&path=gems/Deduplicate",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "6nwLE9G4CfJjIj3oEA0sw$$6JI2ukxnrZF5KG7cwLjp-" : {
+      "id" : "6nwLE9G4CfJjIj3oEA0sw$$6JI2ukxnrZF5KG7cwLjp-",
+      "component" : "Deduplicate",
+      "metadata" : {
+        "label" : "deduplicated_data_6",
+        "slug" : "deduplicated_data_6",
+        "x" : -1800,
+        "y" : -540,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "wC6ZD2c_lo1eHGQep6AUp$$RPkbHsdhctEu5Le1dv3yl",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "_file",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_line",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_modified",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_fivetran_synced",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "sales",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "cNElut7U7gmry1_XlrJWw$$MSWgqgURm0NqldhOINkip",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "dedupColumns" : [ ],
+        "dedupType" : "distinct",
+        "columnsSelector" : [ ],
+        "orders" : [ ],
+        "useOrderBy" : false
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.12&projectSubscriptionProjectId=12654&path=gems/Deduplicate",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "WcNdO94ChDxlh-qUT4QUX$$LVdzzaA0Mrs1F6lQ5HkNo" : {
+      "id" : "WcNdO94ChDxlh-qUT4QUX$$LVdzzaA0Mrs1F6lQ5HkNo",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_target_sg_test",
+        "slug" : "ds_target_sg_test",
+        "x" : -1560,
+        "y" : -260,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "EYt29spbQrO35OTI1S5X9$$9yqcD6Q6vLr4HKueeeiNu",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "_file",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_line",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_modified",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_fivetran_synced",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "store_nbr",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "family",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "onpromotion",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ds_target_sg_test"
+      }
+    },
+    "MFkE3UIpzKTn11RFsRaZV$$LM86ZNZ8_SjSSYycFNq28" : {
+      "id" : "MFkE3UIpzKTn11RFsRaZV$$LM86ZNZ8_SjSSYycFNq28",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_source_sg_stores",
+        "slug" : "ds_source_sg_stores",
+        "x" : -2020,
+        "y" : -400,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "VnIrYSVX4-V9nk7bpW7fz$$gntiQgfEP1SrJdRTn6mKB",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ds_source_sg_stores"
+      }
+    },
+    "AI4KQ0Tk_FmS932WiIHcH$$E7ZbHKWecL0KmmwyBeGmV" : {
+      "id" : "AI4KQ0Tk_FmS932WiIHcH$$E7ZbHKWecL0KmmwyBeGmV",
+      "component" : "Deduplicate",
+      "metadata" : {
+        "label" : "deduplicated_data_5",
+        "slug" : "deduplicated_data_5",
+        "x" : -1800,
+        "y" : -140,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "6b6W-oyrh4xaVJ-zBBDXb$$Tv7VU7OBrean9RDJ_AZyg",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "_file",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_line",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_modified",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_fivetran_synced",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "store_nbr",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "family",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "sales",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "onpromotion",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "uCSgNJjwq5hhrETDhZpyq$$5DwcrkLgH62iPXJKE6miu",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "dedupColumns" : [ ],
+        "dedupType" : "distinct",
+        "columnsSelector" : [ ],
+        "orders" : [ ],
+        "useOrderBy" : false
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.12&projectSubscriptionProjectId=12654&path=gems/Deduplicate",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "fEjQF1orFivL3sZJzdHcP$$f3uAy3kRpEeBFMF-oDUnH" : {
+      "id" : "fEjQF1orFivL3sZJzdHcP$$f3uAy3kRpEeBFMF-oDUnH",
+      "component" : "Deduplicate",
+      "metadata" : {
+        "label" : "deduplicated_data",
+        "slug" : "deduplicated_data",
+        "x" : -1780,
+        "y" : -780,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ObJ_F8otJs6CXgwk86yow$$563chYN4FId7sTM8ibrZm",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "_file",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_line",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_modified",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_fivetran_synced",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "dcoilwtico",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "clpsOb4RzYEFErqrxyKaL$$OBmIOnVFVJFbLz7kMYkFM",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "dedupColumns" : [ ],
+        "dedupType" : "distinct",
+        "columnsSelector" : [ ],
+        "orders" : [ ],
+        "useOrderBy" : false
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.12&projectSubscriptionProjectId=12654&path=gems/Deduplicate",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "syPgmNth9gCtWAKd5KcZj$$SLaF-Ky4kOtsOIBYE5xVZ" : {
+      "id" : "syPgmNth9gCtWAKd5KcZj$$SLaF-Ky4kOtsOIBYE5xVZ",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_target_sg_oil",
+        "slug" : "ds_target_sg_oil",
+        "x" : -1560,
+        "y" : -780,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ov_bqDblgULR2d7Wjhkat$$qbix2QEcaE_qnYlZ275SK",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "_file",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_line",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_modified",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_fivetran_synced",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "dcoilwtico",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ds_target_sg_oil"
+      }
+    },
+    "XlawGEWt3yxRlcG0-9BvC$$I8FQyKyHvSGAZh397B55-" : {
+      "id" : "XlawGEWt3yxRlcG0-9BvC$$I8FQyKyHvSGAZh397B55-",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_target_sg_train",
+        "slug" : "ds_target_sg_train",
+        "x" : -1560,
+        "y" : -140,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ygjR6LInD8h4_AK8TZZCb$$rN_zMMl3vC8CIw91egpRx",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "_file",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_line",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_modified",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_fivetran_synced",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "store_nbr",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "family",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "sales",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "onpromotion",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ds_target_sg_train"
+      }
+    },
+    "ht2uOF7ZeCAFh9JBgP3aE$$QlJLdlFe55EAzSw3nUwV9" : {
+      "id" : "ht2uOF7ZeCAFh9JBgP3aE$$QlJLdlFe55EAzSw3nUwV9",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_source_sg_submission",
+        "slug" : "ds_source_sg_submission",
+        "x" : -2020,
+        "y" : -540,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "w0BPcfxIh_H12PtcipGV9$$KLyRvh4WKlbwXVMMNWEGm",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ds_source_sg_submission"
+      }
+    },
+    "W0bXjlwG4B1QdiZbbBr2L$$lJEiLvRF-keM5OhKBSDF7" : {
+      "id" : "W0bXjlwG4B1QdiZbbBr2L$$lJEiLvRF-keM5OhKBSDF7",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_source_sg_holiday_ev",
+        "slug" : "ds_source_sg_holiday_ev",
+        "x" : -2020,
+        "y" : -660,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "HC562pRsLSfxhGUzu7vJu$$2ncSUlKXqeoWEqCGMd0il",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ds_source_sg_holiday_ev"
+      }
+    },
+    "WcN1lI58mxhLdRTIpao8p$$VmM-nF4nb8jLH4zf3rlQy" : {
+      "id" : "WcN1lI58mxhLdRTIpao8p$$VmM-nF4nb8jLH4zf3rlQy",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_target_sg_submission",
+        "slug" : "ds_target_sg_submission",
+        "x" : -1560,
+        "y" : -540,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "s8VIhRP_h0YCDP7RyW0Ig$$Menb7eL7HmHnwYi1XbpxH",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "_file",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_line",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_modified",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_fivetran_synced",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "sales",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ds_target_sg_submission"
+      }
+    },
+    "nBS89bcaK7cAvAYqcxqst$$rOK3Qgk9J6ayuo9vmaAXX" : {
+      "id" : "nBS89bcaK7cAvAYqcxqst$$rOK3Qgk9J6ayuo9vmaAXX",
+      "component" : "Deduplicate",
+      "metadata" : {
+        "label" : "deduplicated_data_1",
+        "slug" : "deduplicated_data_1",
+        "x" : -1780,
+        "y" : -660,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "fNDyboGm2Wszf4r7a7Wey$$HajoYUKhQBKe1rlk2KwAF",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "_file",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_line",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_modified",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_fivetran_synced",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "type",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "locale",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "locale_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "description",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "transferred",
+              "type" : "boolean",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "YMIGr5Lo6kJv6UoGHAO2D$$Kje8CbQq_nYn2YtyXZ-bp",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "dedupColumns" : [ ],
+        "dedupType" : "distinct",
+        "columnsSelector" : [ ],
+        "orders" : [ ],
+        "useOrderBy" : false
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.12&projectSubscriptionProjectId=12654&path=gems/Deduplicate",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "vLgXSZqSLYh4nzRBGS1Ec$$PJ6zBKm-Jvj9_PJXOOSV_" : {
+      "id" : "vLgXSZqSLYh4nzRBGS1Ec$$PJ6zBKm-Jvj9_PJXOOSV_",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_target_sg_stores",
+        "slug" : "ds_target_sg_stores",
+        "x" : -1560,
+        "y" : -400,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "vWq8XrzQBufsibl2lvlED$$Lh4cne1nazDmQBq-3QXWZ",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "_file",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_line",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_modified",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_fivetran_synced",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "store_nbr",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "city",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "state",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "type",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "cluster",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ds_target_sg_stores"
+      }
+    },
+    "dUCVeOpPVBl9h5QLOtGY8$$mW9aF6DT0mB0knIC-WHBN" : {
+      "id" : "dUCVeOpPVBl9h5QLOtGY8$$mW9aF6DT0mB0knIC-WHBN",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_source_sg_oil",
+        "slug" : "ds_source_sg_oil",
+        "x" : -2020,
+        "y" : -780,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "sbxv9yaEKfptWtMI3g-C4$$LLp2_EiqHxIUiCqzfqEMP",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ds_source_sg_oil"
+      }
+    },
+    "hausrH7wo8SBT0mH_YjXz$$tcFRBmM_5W2rT0NB6cirN" : {
+      "id" : "hausrH7wo8SBT0mH_YjXz$$tcFRBmM_5W2rT0NB6cirN",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_target_sg_transactions",
+        "slug" : "ds_target_sg_transactions",
+        "x" : -1560,
+        "y" : 0,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ECKx60d7eGOFjXC6ZN3ED$$HJ4EQkarHLALpupivusIk",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "_file",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_line",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_modified",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_fivetran_synced",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "store_nbr",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "transactions",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ds_target_sg_transactions"
+      }
+    },
+    "8Mn7S2t5h5YMk_A2krhMk$$joavbtoRtPe1l-OtanEmn" : {
+      "id" : "8Mn7S2t5h5YMk_A2krhMk$$joavbtoRtPe1l-OtanEmn",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_target_sg_holiday_ev",
+        "slug" : "ds_target_sg_holiday_ev",
+        "x" : -1560,
+        "y" : -660,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "2YOSLe1w1wfNyW2OJOOAD$$XpTlAvny8XziQg66oMFjl",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "_file",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_line",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_modified",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_fivetran_synced",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "type",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "locale",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "locale_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "description",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "transferred",
+              "type" : "boolean",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ds_target_sg_holiday_ev"
+      }
+    },
+    "3nV8TsRmDERlXfYg_vraz$$83HfQADnCiJv3zq7bFM0l" : {
+      "id" : "3nV8TsRmDERlXfYg_vraz$$83HfQADnCiJv3zq7bFM0l",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_source_sg_transactions",
+        "slug" : "ds_source_sg_transactions",
+        "x" : -2020,
+        "y" : 0,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "XFDG8XXk6B1eANab3FA21$$k9l87Uu-42Revc5ra-o1y",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ds_source_sg_transactions"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  }
+}
