@@ -90,13 +90,31 @@ pipelines:
     createdAt: '2024-05-15 13:59:27'
     datasets:
       inputs:
+      - datasets/ds_sap_ekko
       - datasets/dss_sap_bask
       - datasets/dss_sap_bkpf
       - datasets/dss_sap_bs_bseg
       - datasets/dss_sap_csks
+      - datasets/dss_sap_ekab
+      - datasets/dss_sap_ekkn
+      - datasets/dss_sap_ekpo
+      - datasets/dss_sap_lfa1
+      - datasets/dss_sap_prps
+      - datasets/dss_sap_rbkp
+      - datasets/dss_sap_rsegg
       outputs:
+      - datasets/dst_sap_bask
       - datasets/dst_sap_bkpf
       - datasets/dst_sap_bseg1
+      - datasets/dst_sap_csks
+      - datasets/dst_sap_ekab
+      - datasets/dst_sap_ekkn
+      - datasets/dst_sap_ekko
+      - datasets/dst_sap_ekpo
+      - datasets/dst_sap_lfa1
+      - datasets/dst_sap_prps
+      - datasets/dst_sap_rbkp
+      - datasets/dst_sap_rseg
     subgraphs: []
     dependencies: {}
 datasets:
@@ -594,6 +612,253 @@ datasets:
         description: ''
         author: shubham@cloudaeon.net
         createdAt: '2024-05-16 07:19:13'
+  datasets/dss_sap_ekab:
+    name: dss_sap_ekab
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-16 10:42:49'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: File
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-16 10:42:49'
+  datasets/dss_sap_ekkn:
+    name: dss_sap_ekkn
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-16 10:45:35'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: File
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-16 10:45:35'
+  datasets/ds_sap_ekko:
+    name: ds_sap_ekko
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-16 10:47:54'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: File
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-16 10:47:54'
+  datasets/dss_sap_ekpo:
+    name: dss_sap_ekpo
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-16 10:49:50'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: File
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-16 10:49:50'
+  datasets/dss_sap_lfa1:
+    name: dss_sap_lfa1
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-16 10:53:08'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: File
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-16 10:53:08'
+  datasets/dss_sap_prps:
+    name: dss_sap_prps
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-16 10:54:07'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: File
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-16 10:54:07'
+  datasets/dss_sap_rbkp:
+    name: dss_sap_rbkp
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-16 10:55:26'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: File
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-16 10:55:26'
+  datasets/dst_sap_ekab:
+    name: dst_sap_ekab
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-16 11:32:45'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-16 11:32:45'
+  datasets/dst_sap_bask:
+    name: dst_sap_bask
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-16 13:33:54'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-16 13:33:54'
+  datasets/dst_sap_csks:
+    name: dst_sap_csks
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-16 13:51:41'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-16 13:51:41'
+  datasets/dst_sap_ekkn:
+    name: dst_sap_ekkn
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-16 14:00:12'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-16 14:00:12'
+  datasets/dst_sap_ekko:
+    name: dst_sap_ekko
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-16 14:04:20'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-16 14:04:20'
+  datasets/dst_sap_ekpo:
+    name: dst_sap_ekpo
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-16 14:13:31'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-16 14:13:31'
+  datasets/dst_sap_lfa1:
+    name: dst_sap_lfa1
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-16 14:17:34'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-16 14:17:34'
+  datasets/dst_sap_prps:
+    name: dst_sap_prps
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-16 14:20:29'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-16 14:20:29'
+  datasets/dst_sap_rbkp:
+    name: dst_sap_rbkp
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-16 14:25:05'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-16 14:25:05'
+  datasets/dss_sap_rbkpp:
+    name: dss_sap_rbkpp
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-16 14:27:09'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: File
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-16 14:27:09'
+  datasets/dss_sap_rsegg:
+    name: dss_sap_rsegg
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-16 14:31:46'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: File
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-16 14:31:46'
+  datasets/dst_sap_rseg:
+    name: dst_sap_rseg
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-16 14:34:37'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-16 14:34:37'
 templates: {}
 jobs: {}
 gemContainer:

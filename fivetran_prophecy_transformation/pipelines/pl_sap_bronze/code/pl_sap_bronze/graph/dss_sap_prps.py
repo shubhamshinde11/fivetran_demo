@@ -6,5 +6,5 @@ from prophecy.libs import typed_lit
 from pl_sap_bronze.config.ConfigStore import *
 from pl_sap_bronze.udfs.UDFs import *
 
-def Reformat_1(spark: SparkSession, in0: DataFrame) -> DataFrame:
-    return in0
+def dss_sap_prps(spark: SparkSession) -> DataFrame:
+    return spark.read.format("delta").load("dbfs:/mnt/fivetran/sap_adls/sap_adls_data_saphanadb/prps/")

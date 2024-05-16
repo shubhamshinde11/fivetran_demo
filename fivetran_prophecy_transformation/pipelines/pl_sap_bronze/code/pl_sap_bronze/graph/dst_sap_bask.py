@@ -6,5 +6,5 @@ from prophecy.libs import typed_lit
 from pl_sap_bronze.config.ConfigStore import *
 from pl_sap_bronze.udfs.UDFs import *
 
-def Reformat_2(spark: SparkSession, in0: DataFrame) -> DataFrame:
-    return in0
+def dst_sap_bask(spark: SparkSession, in0: DataFrame):
+    in0.write.format("delta").mode("append").saveAsTable("`sap_db`.`paiddate_tbl`")
