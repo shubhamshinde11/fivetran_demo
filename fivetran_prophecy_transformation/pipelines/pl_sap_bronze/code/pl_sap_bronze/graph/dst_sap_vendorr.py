@@ -6,5 +6,5 @@ from prophecy.libs import typed_lit
 from pl_sap_bronze.config.ConfigStore import *
 from pl_sap_bronze.udfs.UDFs import *
 
-def dst_sap_vendor(spark: SparkSession, in0: DataFrame):
+def dst_sap_vendorr(spark: SparkSession, in0: DataFrame):
     in0.write.format("delta").mode("append").saveAsTable("`sap_db`.`vendor_tbl`")

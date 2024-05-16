@@ -4,7 +4,7 @@ from .Reformat_2 import Reformat_2
 from .Reformat_1 import Reformat_1
 from .dss_sap_csks import dss_sap_csks
 from .dss_sap_bask import dss_sap_bask
-from .dst_sap_vendor import dst_sap_vendor
+from .dst_sap_vendorr import dst_sap_vendorr
 from .reformat_vendor_data import reformat_vendor_data
 from .dss_sap_bseg import dss_sap_bseg
 from .reformatted_data import reformatted_data

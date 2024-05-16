@@ -14,7 +14,7 @@ def pipeline(spark: SparkSession) -> None:
     df_dss_sap_bkpf = dss_sap_bkpf(spark)
     df_invoice_reformat = invoice_reformat(spark, df_dss_sap_bkpf)
     dst_sap_invoice(spark, df_invoice_reformat)
-    dst_sap_vendor(spark, df_reformat_vendor_data)
+    dst_sap_vendorr(spark, df_reformat_vendor_data)
     df_Reformat_2 = Reformat_2(spark)
     df_Reformat_1 = Reformat_1(spark)
     df_dss_sap_csks = dss_sap_csks(spark)
