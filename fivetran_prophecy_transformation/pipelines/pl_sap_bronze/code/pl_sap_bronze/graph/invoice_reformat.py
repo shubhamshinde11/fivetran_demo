@@ -8,7 +8,9 @@ from pl_sap_bronze.udfs.UDFs import *
 
 def invoice_reformat(spark: SparkSession, in0: DataFrame) -> DataFrame:
     return in0.select(
-        col("awkey").cast(IntegerType()).alias("invoice_number"), 
+        col("awkey").alias("invoice_number"), 
         col("belnr").alias("prepay_doc"), 
-        col("waers").alias("local_currency")
+        col("waers").alias("local_currency"), 
+        col("bukrs").alias("region"), 
+        col("gjahr").alias("fiscal_year")
     )

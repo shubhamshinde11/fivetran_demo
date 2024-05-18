@@ -1,0 +1,164 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1"
+    },
+    "codeGenConfiguration" : {
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "7.1.96",
+        "pyPiVersion" : "1.8.15"
+      }
+    },
+    "id" : "1",
+    "uri" : "pipelines/pl_spend_analytics",
+    "pipelineSettingsInfo" : {
+      "applicationName" : "pl_spend_analytics",
+      "hasApplication" : true
+    },
+    "language" : "python",
+    "fabricId" : "11913",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "shubhamcloudaeonnetteam.fivetranpropecytransformation.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "12654",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "12655",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "pl_spend_analytics",
+    "configurationVersion" : "v2"
+  },
+  "connections" : [ ],
+  "processes" : {
+    "gaa1XyuM6DHTH8YOxlZVm$$_GCaaozOmVqmvLC5v9Jda" : {
+      "id" : "gaa1XyuM6DHTH8YOxlZVm$$_GCaaozOmVqmvLC5v9Jda",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "dst_sap_lfa1",
+        "slug" : "dst_sap_lfa1",
+        "x" : -400,
+        "y" : -20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "TKwxMBKcl45idPPlnWDEC$$ZLxuuhQCKDn1jk8hmiHiq",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/dst_sap_lfa1"
+      }
+    },
+    "t7hZsDmxNJlqPvkU6gQyd$$GjPj5TJKvjJgfIT0HETsK" : {
+      "id" : "t7hZsDmxNJlqPvkU6gQyd$$GjPj5TJKvjJgfIT0HETsK",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "dst_sap_bseg1",
+        "slug" : "dst_sap_bseg1",
+        "x" : -400,
+        "y" : -180,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "ED-2xjZoqtvZWG_wh5qOA$$AQSL3wZTdoZq-aZFL-MTJ",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/dst_sap_bseg1"
+      }
+    },
+    "C1k_WUg3xpCNasHett3Os$$6xQHFt34Ze0xWspbHfTfM" : {
+      "id" : "C1k_WUg3xpCNasHett3Os$$6xQHFt34Ze0xWspbHfTfM",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "dst_sap_bkpf",
+        "slug" : "dst_sap_bkpf",
+        "x" : -400,
+        "y" : 140,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "XZoVJJJH0JUuYVAtFmClb$$nyK6s_vzUBv4D6Mh-yNhH",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/dst_sap_bkpf"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  }
+}

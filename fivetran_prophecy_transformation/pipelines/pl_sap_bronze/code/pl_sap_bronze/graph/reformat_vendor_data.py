@@ -15,5 +15,7 @@ def reformat_vendor_data(spark: SparkSession, in0: DataFrame) -> DataFrame:
         col("hkont").alias("gl"), 
         col("sgtxt").alias("prepay_doc"), 
         col("buzei").alias("line_item"), 
-        col("aufnr").alias("internal_order")
+        col("aufnr").alias("internal_order"), 
+        col("bukrs").alias("region"), 
+        col("gjahr").alias("fiscal_year")
     )

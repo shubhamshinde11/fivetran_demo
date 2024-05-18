@@ -7,4 +7,4 @@ from pl_sap_bronze.config.ConfigStore import *
 from pl_sap_bronze.udfs.UDFs import *
 
 def invoice_line_description(spark: SparkSession, in0: DataFrame) -> DataFrame:
-    return in0.select(col("sgtxt").alias("invoice_line_description"))
+    return in0.select(col("sgtxt").alias("invoice_line_description"), col("belnr").alias("prepay_doc"))

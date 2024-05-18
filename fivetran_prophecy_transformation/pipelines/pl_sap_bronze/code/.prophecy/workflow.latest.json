@@ -6,7 +6,7 @@
     "codeGenConfiguration" : {
       "editableConfig" : true,
       "plibVersion" : {
-        "mavenVersion" : "7.1.95",
+        "mavenVersion" : "7.1.96",
         "pyPiVersion" : "1.8.15"
       }
     },
@@ -1544,10 +1544,10 @@
       "id" : "xbMr2pkSjMAK_CCPk0Mf9$$fm2K-xb5quPp6MNXCHWh1",
       "component" : "Target",
       "metadata" : {
-        "label" : "dst_sap_bask",
-        "slug" : "dst_sap_bask",
+        "label" : "ds_sap_paiddate_tbl",
+        "slug" : "ds_sap_paiddate_tbl",
         "x" : -760,
-        "y" : -140,
+        "y" : -200,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -1595,6 +1595,24 @@
                 "mappings" : [ ],
                 "tags" : [ ]
               }
+            }, {
+              "name" : "region",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "fiscal_year",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
             } ]
           },
           "isStreaming" : false
@@ -1614,8 +1632,8 @@
       "metadata" : {
         "label" : "dss_sap_bask",
         "slug" : "dss_sap_bask",
-        "x" : -1160,
-        "y" : -140,
+        "x" : -1120,
+        "y" : -200,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -1641,8 +1659,8 @@
       "metadata" : {
         "label" : "reformat_vendor_data",
         "slug" : "reformat_vendor_data",
-        "x" : -980,
-        "y" : 0,
+        "x" : -940,
+        "y" : -540,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -5495,10 +5513,24 @@
             "expression" : "aufnr"
           },
           "description" : ""
+        }, {
+          "target" : "region",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bukrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "fiscal_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "gjahr"
+          },
+          "description" : ""
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "_PavWsjcBZQmzIGsvbaeh$$6KS6nYCH71SbMLmC6fnAU##buzei", "_PavWsjcBZQmzIGsvbaeh$$6KS6nYCH71SbMLmC6fnAU##aufnr", "_PavWsjcBZQmzIGsvbaeh$$6KS6nYCH71SbMLmC6fnAU##hkont", "_PavWsjcBZQmzIGsvbaeh$$6KS6nYCH71SbMLmC6fnAU##dmbtr", "_PavWsjcBZQmzIGsvbaeh$$6KS6nYCH71SbMLmC6fnAU##lifnr", "_PavWsjcBZQmzIGsvbaeh$$6KS6nYCH71SbMLmC6fnAU##ebeln", "_PavWsjcBZQmzIGsvbaeh$$6KS6nYCH71SbMLmC6fnAU##sgtxt" ]
+        "columnsSelector" : [ "_PavWsjcBZQmzIGsvbaeh$$6KS6nYCH71SbMLmC6fnAU##bukrs", "_PavWsjcBZQmzIGsvbaeh$$6KS6nYCH71SbMLmC6fnAU##hkont", "_PavWsjcBZQmzIGsvbaeh$$6KS6nYCH71SbMLmC6fnAU##aufnr", "_PavWsjcBZQmzIGsvbaeh$$6KS6nYCH71SbMLmC6fnAU##dmbtr", "_PavWsjcBZQmzIGsvbaeh$$6KS6nYCH71SbMLmC6fnAU##gjahr", "_PavWsjcBZQmzIGsvbaeh$$6KS6nYCH71SbMLmC6fnAU##sgtxt", "_PavWsjcBZQmzIGsvbaeh$$6KS6nYCH71SbMLmC6fnAU##buzei", "_PavWsjcBZQmzIGsvbaeh$$6KS6nYCH71SbMLmC6fnAU##ebeln", "_PavWsjcBZQmzIGsvbaeh$$6KS6nYCH71SbMLmC6fnAU##lifnr" ]
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.12&projectSubscriptionProjectId=12654&path=gems/Reformat",
@@ -5511,8 +5543,8 @@
       "metadata" : {
         "label" : "dss_sap_lfa1",
         "slug" : "dss_sap_lfa1",
-        "x" : -1160,
-        "y" : 840,
+        "x" : -1140,
+        "y" : 80,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -5538,8 +5570,8 @@
       "metadata" : {
         "label" : "reformatted_data",
         "slug" : "reformatted_data",
-        "x" : -980,
-        "y" : -140,
+        "x" : -940,
+        "y" : -200,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -7519,10 +7551,24 @@
             "expression" : "cast(cpudt as TIMESTAMP)"
           },
           "description" : ""
+        }, {
+          "target" : "region",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bukrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "fiscal_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "gjahr"
+          },
+          "description" : ""
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "chWCxnRrYmJa8o3pcbwyL$$Ep-NpblHpGf8Io00VmdAw##augbl", "chWCxnRrYmJa8o3pcbwyL$$Ep-NpblHpGf8Io00VmdAw##xzahl", "chWCxnRrYmJa8o3pcbwyL$$Ep-NpblHpGf8Io00VmdAw##cpudt", "chWCxnRrYmJa8o3pcbwyL$$Ep-NpblHpGf8Io00VmdAw##belnr" ]
+        "columnsSelector" : [ "chWCxnRrYmJa8o3pcbwyL$$Ep-NpblHpGf8Io00VmdAw##cpudt", "chWCxnRrYmJa8o3pcbwyL$$Ep-NpblHpGf8Io00VmdAw##xzahl", "chWCxnRrYmJa8o3pcbwyL$$Ep-NpblHpGf8Io00VmdAw##belnr", "chWCxnRrYmJa8o3pcbwyL$$Ep-NpblHpGf8Io00VmdAw##augbl", "chWCxnRrYmJa8o3pcbwyL$$Ep-NpblHpGf8Io00VmdAw##bukrs", "chWCxnRrYmJa8o3pcbwyL$$Ep-NpblHpGf8Io00VmdAw##gjahr" ]
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.12&projectSubscriptionProjectId=12654&path=gems/Reformat",
@@ -7533,10 +7579,10 @@
       "id" : "qTflGYZX9-2H5N9CDPxrr$$kvSAWBaW5b70yZfyKFSPr",
       "component" : "Target",
       "metadata" : {
-        "label" : "dst_sap_invoice",
-        "slug" : "dst_sap_invoice",
-        "x" : -760,
-        "y" : -280,
+        "label" : "ds_sap_invoice",
+        "slug" : "ds_sap_invoice",
+        "x" : -740,
+        "y" : -700,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -7550,7 +7596,7 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "invoice_number",
-              "type" : "integer",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -7575,6 +7621,24 @@
                 "mappings" : [ ],
                 "tags" : [ ]
               }
+            }, {
+              "name" : "region",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "fiscal_year",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
             } ]
           },
           "isStreaming" : false
@@ -7592,10 +7656,10 @@
       "id" : "KrcxYeVKJpH-adKzxCLKm$$4POkDyrS9u3-w3wb8dZu2",
       "component" : "Target",
       "metadata" : {
-        "label" : "dst_sap_vendorr",
-        "slug" : "dst_sap_vendorr",
+        "label" : "ds_sap_vendorr",
+        "slug" : "ds_sap_vendorr",
         "x" : -760,
-        "y" : 0,
+        "y" : -540,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -7672,6 +7736,24 @@
               }
             }, {
               "name" : "internal_order",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "region",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "fiscal_year",
               "type" : "string",
               "nullable" : true,
               "metadata" : {
@@ -11619,10 +11701,10 @@
       "id" : "579dDPnf0kUt9cCZ_vzGT$$Q7M3glBe-ZcFrs7FWywIs",
       "component" : "Target",
       "metadata" : {
-        "label" : "dst_sap_ekab",
-        "slug" : "dst_sap_ekab",
-        "x" : -780,
-        "y" : 280,
+        "label" : "ds_sap_contract_no",
+        "slug" : "ds_sap_contract_no",
+        "x" : -760,
+        "y" : -360,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -11698,8 +11780,8 @@
       "metadata" : {
         "label" : "dss_sap_bkpf",
         "slug" : "dss_sap_bkpf",
-        "x" : -1160,
-        "y" : -280,
+        "x" : -1140,
+        "y" : -700,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -12484,8 +12566,8 @@
       "metadata" : {
         "label" : "dss_sap_bseg",
         "slug" : "dss_sap_bseg",
-        "x" : -1160,
-        "y" : 0,
+        "x" : -1120,
+        "y" : -540,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -13724,10 +13806,17 @@
             "expression" : "sgtxt"
           },
           "description" : ""
+        }, {
+          "target" : "prepay_doc",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "belnr"
+          },
+          "description" : ""
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "FK4oASvQBlNY4QdKIZzlx$$5cofETYVfeivTGKoVaNG1##sgtxt" ]
+        "columnsSelector" : [ "FK4oASvQBlNY4QdKIZzlx$$5cofETYVfeivTGKoVaNG1##sgtxt", "FK4oASvQBlNY4QdKIZzlx$$5cofETYVfeivTGKoVaNG1##belnr" ]
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.12&projectSubscriptionProjectId=12654&path=gems/Reformat",
@@ -13740,8 +13829,8 @@
       "metadata" : {
         "label" : "dss_sap_ekab",
         "slug" : "dss_sap_ekab",
-        "x" : -1160,
-        "y" : 280,
+        "x" : -1140,
+        "y" : -360,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -13886,7 +13975,7 @@
         "label" : "financial_data_reformat",
         "slug" : "financial_data_reformat",
         "x" : -980,
-        "y" : 140,
+        "y" : 280,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -14717,7 +14806,7 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "wo6-FprgXJ0usGeN-W5jN$$rRPr1lwZDuqEru6IkCHxT##kostl", "wo6-FprgXJ0usGeN-W5jN$$rRPr1lwZDuqEru6IkCHxT##land1", "wo6-FprgXJ0usGeN-W5jN$$rRPr1lwZDuqEru6IkCHxT##verak", "wo6-FprgXJ0usGeN-W5jN$$rRPr1lwZDuqEru6IkCHxT##bukrs" ]
+        "columnsSelector" : [ "wo6-FprgXJ0usGeN-W5jN$$rRPr1lwZDuqEru6IkCHxT##verak", "wo6-FprgXJ0usGeN-W5jN$$rRPr1lwZDuqEru6IkCHxT##land1", "wo6-FprgXJ0usGeN-W5jN$$rRPr1lwZDuqEru6IkCHxT##kostl", "wo6-FprgXJ0usGeN-W5jN$$rRPr1lwZDuqEru6IkCHxT##bukrs" ]
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.12&projectSubscriptionProjectId=12654&path=gems/Reformat",
@@ -14730,8 +14819,8 @@
       "metadata" : {
         "label" : "vendor_info_reformat",
         "slug" : "vendor_info_reformat",
-        "x" : -940,
-        "y" : 840,
+        "x" : -920,
+        "y" : 80,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -16588,7 +16677,7 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "rIxBks5XbHHDc2DL1qYjv$$EQthmg4hh0ubW8rgWLjez##name1", "rIxBks5XbHHDc2DL1qYjv$$EQthmg4hh0ubW8rgWLjez##stras", "rIxBks5XbHHDc2DL1qYjv$$EQthmg4hh0ubW8rgWLjez##land1", "rIxBks5XbHHDc2DL1qYjv$$EQthmg4hh0ubW8rgWLjez##ort01" ]
+        "columnsSelector" : [ "rIxBks5XbHHDc2DL1qYjv$$EQthmg4hh0ubW8rgWLjez##ort01", "rIxBks5XbHHDc2DL1qYjv$$EQthmg4hh0ubW8rgWLjez##land1", "rIxBks5XbHHDc2DL1qYjv$$EQthmg4hh0ubW8rgWLjez##name1", "rIxBks5XbHHDc2DL1qYjv$$EQthmg4hh0ubW8rgWLjez##stras" ]
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.12&projectSubscriptionProjectId=12654&path=gems/Reformat",
@@ -16654,6 +16743,31 @@
         "datasetId" : "datasets/dst_sap_ekko"
       }
     },
+    "94qiJEypF5Nt8JQrYn571$$HbrLAgEEuP13qZ4xua1Pc" : {
+      "id" : "94qiJEypF5Nt8JQrYn571$$HbrLAgEEuP13qZ4xua1Pc",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_1",
+        "slug" : "Source_1",
+        "x" : -1120,
+        "y" : -60,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "F3Y0KEFH0ygVzPVDARBwk$$f2BvXK5Pew1nrsH2ri8np",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
     "l7EqV81q_7D5lD7mvWKn9$$f0GtcE08Mr1A8w0hAf3tS" : {
       "id" : "l7EqV81q_7D5lD7mvWKn9$$f0GtcE08Mr1A8w0hAf3tS",
       "component" : "Source",
@@ -16671,7 +16785,26 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "zn9Gqk8ivqc4iWjk282me$$rXRiHmmvrvjZKDC-2dMw-",
-          "slug" : "out"
+          "slug" : "out",
+          "dataExplorerProps" : {
+            "filter" : {
+              "type" : "Composite",
+              "op" : {
+                "type" : "AND"
+              },
+              "filters" : [ ]
+            },
+            "sorts" : [ {
+              "type" : "Simple",
+              "exp" : {
+                "type" : "Field",
+                "value" : "belnr"
+              },
+              "order" : {
+                "type" : "Desc"
+              }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false,
@@ -16688,7 +16821,7 @@
         "label" : "dst_sap_csks",
         "slug" : "dst_sap_csks",
         "x" : -780,
-        "y" : 140,
+        "y" : 280,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -16755,8 +16888,8 @@
       "metadata" : {
         "label" : "dst_sap_lfa1",
         "slug" : "dst_sap_lfa1",
-        "x" : -760,
-        "y" : 840,
+        "x" : -740,
+        "y" : 80,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -18653,8 +18786,8 @@
       "metadata" : {
         "label" : "format_po_contract_numbers",
         "slug" : "format_po_contract_numbers",
-        "x" : -980,
-        "y" : 280,
+        "x" : -940,
+        "y" : -360,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -18904,7 +19037,7 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "tdb-l23tuqLGgHBCCm9jJ$$qW-c_ZiZ87EKwWkTQ2gMZ##ebeln", "tdb-l23tuqLGgHBCCm9jJ$$qW-c_ZiZ87EKwWkTQ2gMZ##konnr" ]
+        "columnsSelector" : [ "tdb-l23tuqLGgHBCCm9jJ$$qW-c_ZiZ87EKwWkTQ2gMZ##konnr", "tdb-l23tuqLGgHBCCm9jJ$$qW-c_ZiZ87EKwWkTQ2gMZ##ebeln" ]
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.12&projectSubscriptionProjectId=12654&path=gems/Reformat",
@@ -18939,6 +19072,15 @@
                 "mappings" : [ ],
                 "tags" : [ ]
               }
+            }, {
+              "name" : "prepay_doc",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
             } ]
           },
           "isStreaming" : false
@@ -18959,7 +19101,7 @@
         "label" : "dss_sap_csks",
         "slug" : "dss_sap_csks",
         "x" : -1160,
-        "y" : 140,
+        "y" : 280,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -18985,8 +19127,8 @@
       "metadata" : {
         "label" : "invoice_reformat",
         "slug" : "invoice_reformat",
-        "x" : -980,
-        "y" : -280,
+        "x" : -920,
+        "y" : -700,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -20618,7 +20760,7 @@
           "target" : "invoice_number",
           "expression" : {
             "format" : "sql",
-            "expression" : "cast(awkey as INT)"
+            "expression" : "awkey"
           },
           "description" : ""
         }, {
@@ -20635,10 +20777,24 @@
             "expression" : "waers"
           },
           "description" : ""
+        }, {
+          "target" : "region",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "bukrs"
+          },
+          "description" : ""
+        }, {
+          "target" : "fiscal_year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "gjahr"
+          },
+          "description" : ""
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "lYhdN7CyVX9D0JKflRsdv$$T7pYnnI0FTqQmqeDFhHa1##awkey", "lYhdN7CyVX9D0JKflRsdv$$T7pYnnI0FTqQmqeDFhHa1##belnr", "lYhdN7CyVX9D0JKflRsdv$$T7pYnnI0FTqQmqeDFhHa1##waers" ]
+        "columnsSelector" : [ "lYhdN7CyVX9D0JKflRsdv$$T7pYnnI0FTqQmqeDFhHa1##belnr", "lYhdN7CyVX9D0JKflRsdv$$T7pYnnI0FTqQmqeDFhHa1##awkey", "lYhdN7CyVX9D0JKflRsdv$$T7pYnnI0FTqQmqeDFhHa1##bukrs", "lYhdN7CyVX9D0JKflRsdv$$T7pYnnI0FTqQmqeDFhHa1##waers", "lYhdN7CyVX9D0JKflRsdv$$T7pYnnI0FTqQmqeDFhHa1##gjahr" ]
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.12&projectSubscriptionProjectId=12654&path=gems/Reformat",
@@ -22489,5 +22645,23 @@
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  }
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.94qiJEypF5Nt8JQrYn571$$HbrLAgEEuP13qZ4xua1Pc.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ],
+    "diagnosticType" : 1
+  } ]
 }

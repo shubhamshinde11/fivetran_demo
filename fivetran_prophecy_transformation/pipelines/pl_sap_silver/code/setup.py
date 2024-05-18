@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 setup(
     name = 'pl_sap_silver',
     version = '1.0',
-    packages = find_packages(include = ('pl_sap_silver*', )) + ['prophecy_config_instances'],
+    packages = find_packages(include = ('pl_sap_bronze*', )) + ['prophecy_config_instances'],
     package_dir = {'prophecy_config_instances' : 'configs/resources/config'},
     package_data = {'prophecy_config_instances' : ['*.json', '*.py', '*.conf']},
     description = 'workflow',
@@ -10,7 +10,7 @@ setup(
 'prophecy-libs==1.8.15'],
     entry_points = {
 'console_scripts' : [
-'main = pl_sap_silver.pipeline:main'], },
+'main = pl_sap_bronze.pipeline:main'], },
     data_files = [(".prophecy", [".prophecy/workflow.latest.json"])],
     extras_require = {
 'test' : ['pytest', 'pytest-html'], }

@@ -1,0 +1,2329 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1"
+    },
+    "codeGenConfiguration" : {
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "7.1.96",
+        "pyPiVersion" : "1.8.15"
+      }
+    },
+    "id" : "1",
+    "uri" : "pipelines/pl_sap_gold",
+    "pipelineSettingsInfo" : {
+      "applicationName" : "pl_sap_gold",
+      "hasApplication" : true
+    },
+    "language" : "python",
+    "fabricId" : "11913",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "shubhamcloudaeonnetteam.fivetranpropecytransformation.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "12654",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "12655",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "pl_sap_gold",
+    "configurationVersion" : "v2"
+  },
+  "connections" : [ {
+    "id" : "91Ldv3C-PEhvhVnHFuTCd",
+    "source" : "TYJJtfHI8Yj_uBSx58O0G$$eLoqm4GsWG-iFxSa4-d5f",
+    "sourcePort" : "P4OVXYPOm8pUSBnStktf9$$mE-TtIe-mlRT861NBbPHT",
+    "target" : "XgVJFoFcw3Pz-QHuukKao$$KsbtmWqZrRdNSXfcxrjZL",
+    "targetPort" : "qfuDmV0uWuHAEHVzMHCWh$$JP14ySHp6RBFCENHWo9Qd"
+  }, {
+    "id" : "yZ5WgaVTLm7CGNODtuEi5",
+    "source" : "XgVJFoFcw3Pz-QHuukKao$$KsbtmWqZrRdNSXfcxrjZL",
+    "sourcePort" : "-VJx7WR7q0c22xuDLKYtJ$$82GZcr-Gk_kq1OJfu04zZ",
+    "target" : "hU935eQ7crmWFk12XGYuv$$kB92XN3H1Fcz8AJ2zh-3a",
+    "targetPort" : "qRyHbFMDeQz8HBG2r7eYf$$BSO2PFBlqgTs0T6Ba72Ws"
+  }, {
+    "id" : "InfAvoOTIIclwgtJAVzYy",
+    "source" : "p1RD0H_Jh6KUsh1soW0el$$zZ7HaDe8KfcJ1_vSfZ2-a",
+    "sourcePort" : "ddnHcwJwhUTpH7fnC9jfx$$VHm5aBZfyGxFvqyEjnTCL",
+    "target" : "hU935eQ7crmWFk12XGYuv$$kB92XN3H1Fcz8AJ2zh-3a",
+    "targetPort" : "jvrzRryRaZbPPabMW2YEB$$Y7voHgIJJgKVP3nVf5zcv"
+  }, {
+    "id" : "3Tqt9R6R8jsAnRSmWN__b$$JAspyu7X8wohb3DAXZGwg",
+    "source" : "hU935eQ7crmWFk12XGYuv$$kB92XN3H1Fcz8AJ2zh-3a",
+    "sourcePort" : "mSP4HN7Vmt2e8tWxE9xOG$$23mywn1Wy3h4Nup4zI-SW",
+    "target" : "qSTlIFyh076m2UaLfRdPZ$$oI6H7urVubwCaxyFM959j",
+    "targetPort" : "71KSkgbq4k-xVHfoxayIl$$wX8FbtGclM0g8hZ-5p9vF"
+  }, {
+    "id" : "s7jDc_8sVkfU0kXF2Sa10",
+    "source" : "nggpl-h7ida6Hcp0DWrgh$$Kk1Olur8gevh5-rx3ylrd",
+    "sourcePort" : "coNjvyZF4XVO9h3NpiSOV$$DxQ1gTmlHKHrO7eP5aoOo",
+    "target" : "OVK1w3bFKhAmyHyCNGlG8$$8R0pH48M5YujIE-sjzgyJ",
+    "targetPort" : "W9GvGBHujqa8ilUsAXLTi$$ISo1kqH_p8hfoVFOkdpuZ"
+  }, {
+    "id" : "lXuodAtiaw0WkFuG2grrz",
+    "source" : "p78O1TVZkpY_3GTfrzK55$$FckuqCOoDPUEgQQi17wo2",
+    "sourcePort" : "9IN2P1IdUNFYtgVf7742b$$DCPUzcevcjtltJ5VYsL-z",
+    "target" : "OVK1w3bFKhAmyHyCNGlG8$$8R0pH48M5YujIE-sjzgyJ",
+    "targetPort" : "SpB7njkjJkYDDkCZGIieC$$fNmSZK4-uXme9NN1Ry6zh"
+  }, {
+    "id" : "Fi3I25QFbpsn1fXDt1hGM",
+    "source" : "OVK1w3bFKhAmyHyCNGlG8$$8R0pH48M5YujIE-sjzgyJ",
+    "sourcePort" : "R5tzLTvUm63b6aQFeLrbr$$yC8GK7b1twQ2pqQEkO8DD",
+    "target" : "AggJ3cJiUYMYYIz-epXm6$$jGcZcO9_Y-rPEaT36tUYW",
+    "targetPort" : "-37jA2WeO8mUCYJapbYBh$$GTnzdsioeDL7Tik6nc0H_"
+  }, {
+    "id" : "EG5DiRlB4_0ncnvY03dAi",
+    "source" : "oDmyCTmouJtf2QGILdad_$$IIBaTiLUqwtdGOh3kHs0b",
+    "sourcePort" : "6GgFtl-5aKqWXoPJBZqw8$$N3Dm3tmWd5SNEUPaeEVut",
+    "target" : "XgVJFoFcw3Pz-QHuukKao$$KsbtmWqZrRdNSXfcxrjZL",
+    "targetPort" : "vQTAI0KlDIVWhbcS1Mu7z$$o6sL2Oo0qTbDMONXaZ54U"
+  }, {
+    "id" : "GN9wLrQNnOLC-q3Eq2ouL",
+    "source" : "qJsC2ohhS677rF-m1IK4-$$fhgpgwgWH_z7X45Bh0wKw",
+    "sourcePort" : "E5Geveyfa94ggjDJ6PdmU$$yp9Dx4pKyQPyAglHCIHBp",
+    "target" : "AggJ3cJiUYMYYIz-epXm6$$jGcZcO9_Y-rPEaT36tUYW",
+    "targetPort" : "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k"
+  }, {
+    "id" : "dehcjjq4s1Zs-iyRbh30U$$_C0pDUXxgaJKYmZVCNWtJ",
+    "source" : "AggJ3cJiUYMYYIz-epXm6$$jGcZcO9_Y-rPEaT36tUYW",
+    "sourcePort" : "95j581GZYRiTUi6yB-uRz$$Bu7Vlg5GVOv8Y2hvusP98",
+    "target" : "VUw5uWiKULaZiHqYcIfpL$$55bARlf8L-utdNagtmFAi",
+    "targetPort" : "G5KhIrmT8aOwIJu4sGTq0$$8BM51feHzDJ-1DTWs_J0W"
+  } ],
+  "processes" : {
+    "OVK1w3bFKhAmyHyCNGlG8$$8R0pH48M5YujIE-sjzgyJ" : {
+      "id" : "OVK1w3bFKhAmyHyCNGlG8$$8R0pH48M5YujIE-sjzgyJ",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "by_invoice_no",
+        "slug" : "by_invoice_no",
+        "x" : -60,
+        "y" : 960,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "W9GvGBHujqa8ilUsAXLTi$$ISo1kqH_p8hfoVFOkdpuZ",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "posting_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "invoice_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "invoice_no",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "doc_type",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "vendor_no",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        }, {
+          "id" : "SpB7njkjJkYDDkCZGIieC$$fNmSZK4-uXme9NN1Ry6zh",
+          "slug" : "in1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "invoice_line_description",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "invoice_no",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "po_number",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "po_item",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "material",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "amount",
+              "type" : "decimal(38,10)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "quantity",
+              "type" : "decimal(38,10)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "R5tzLTvUm63b6aQFeLrbr$$yC8GK7b1twQ2pqQEkO8DD",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.invoice_no=in1.invoice_no"
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ {
+          "target" : "posting_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.posting_date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "invoice_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.invoice_date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "invoice_no",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.invoice_no"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "doc_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.doc_type"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "vendor_no",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.vendor_no"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "invoice_line_description",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.invoice_line_description"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "po_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.po_number"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "invoice_no1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.invoice_no"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "po_item",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.po_item"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "material",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.material"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "amount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.amount"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "quantity",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.quantity"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "hints" : [ {
+          "id" : "W9GvGBHujqa8ilUsAXLTi$$ISo1kqH_p8hfoVFOkdpuZ",
+          "alias" : "in0",
+          "hintType" : "none",
+          "propagateColumns" : false
+        }, {
+          "id" : "SpB7njkjJkYDDkCZGIieC$$fNmSZK4-uXme9NN1Ry6zh",
+          "alias" : "in1",
+          "hintType" : "none",
+          "propagateColumns" : false
+        } ],
+        "allIn1" : null,
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "SpB7njkjJkYDDkCZGIieC$$fNmSZK4-uXme9NN1Ry6zh##invoice_no", "W9GvGBHujqa8ilUsAXLTi$$ISo1kqH_p8hfoVFOkdpuZ##invoice_no", "SpB7njkjJkYDDkCZGIieC$$fNmSZK4-uXme9NN1Ry6zh##invoice_no", "SpB7njkjJkYDDkCZGIieC$$fNmSZK4-uXme9NN1Ry6zh##material", "W9GvGBHujqa8ilUsAXLTi$$ISo1kqH_p8hfoVFOkdpuZ##invoice_no", "W9GvGBHujqa8ilUsAXLTi$$ISo1kqH_p8hfoVFOkdpuZ##vendor_no", "SpB7njkjJkYDDkCZGIieC$$fNmSZK4-uXme9NN1Ry6zh##quantity", "SpB7njkjJkYDDkCZGIieC$$fNmSZK4-uXme9NN1Ry6zh##invoice_line_description", "W9GvGBHujqa8ilUsAXLTi$$ISo1kqH_p8hfoVFOkdpuZ##doc_type", "W9GvGBHujqa8ilUsAXLTi$$ISo1kqH_p8hfoVFOkdpuZ##invoice_date", "SpB7njkjJkYDDkCZGIieC$$fNmSZK4-uXme9NN1Ry6zh##po_item", "SpB7njkjJkYDDkCZGIieC$$fNmSZK4-uXme9NN1Ry6zh##amount", "W9GvGBHujqa8ilUsAXLTi$$ISo1kqH_p8hfoVFOkdpuZ##posting_date", "SpB7njkjJkYDDkCZGIieC$$fNmSZK4-uXme9NN1Ry6zh##po_number" ],
+        "allIn0" : null,
+        "whereClause" : null,
+        "headAlias" : "in0"
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.12&projectSubscriptionProjectId=12654&path=gems/Join",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "qSTlIFyh076m2UaLfRdPZ$$oI6H7urVubwCaxyFM959j" : {
+      "id" : "qSTlIFyh076m2UaLfRdPZ$$oI6H7urVubwCaxyFM959j",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "dst_sap_gold_BO_purchase",
+        "slug" : "dst_sap_gold_BO_purchase",
+        "x" : 280,
+        "y" : 400,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "71KSkgbq4k-xVHfoxayIl$$wX8FbtGclM0g8hZ-5p9vF",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/dst_sap_gold_BO_purchase"
+      }
+    },
+    "AggJ3cJiUYMYYIz-epXm6$$jGcZcO9_Y-rPEaT36tUYW" : {
+      "id" : "AggJ3cJiUYMYYIz-epXm6$$jGcZcO9_Y-rPEaT36tUYW",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "by_purchase_order_number_1",
+        "slug" : "by_purchase_order_number_1",
+        "x" : 240,
+        "y" : 940,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "payment_terms",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "contract_start_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "contract_end_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "purchase_ord_no",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "doc_type",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "creation_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "purchase_org",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "purchase_group",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "currency",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "inco_terms1",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "inco_terms2",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "vendor_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "country",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "city",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "address",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "vendor_num",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "vendor_group",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "material_group",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "spend_description",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "po_no",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "po_item",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Material_no",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "net_price",
+              "type" : "decimal(38,10)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "quantity",
+              "type" : "decimal(38,10)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "gross_price",
+              "type" : "decimal(38,10)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "deletion_flag",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "completion_flag",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        }, {
+          "id" : "-37jA2WeO8mUCYJapbYBh$$GTnzdsioeDL7Tik6nc0H_",
+          "slug" : "in1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "posting_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "invoice_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "invoice_no",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "doc_type",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "vendor_no",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "invoice_line_description",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "po_number",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "invoice_no1",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "po_item",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "material",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "amount",
+              "type" : "decimal(38,10)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "quantity",
+              "type" : "decimal(38,10)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "95j581GZYRiTUi6yB-uRz$$Bu7Vlg5GVOv8Y2hvusP98",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.purchase_ord_no=in1.po_number"
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ {
+          "target" : "payment_terms",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.payment_terms"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "contract_start_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.contract_start_date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "contract_end_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.contract_end_date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "purchase_ord_no",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.purchase_ord_no"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "purchase_doc_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.doc_type"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "creation_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.creation_date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "purchase_org",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.purchase_org"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "purchase_group",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.purchase_group"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "currency",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.currency"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "inco_terms1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.inco_terms1"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "inco_terms2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.inco_terms2"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "vendor_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.vendor_name"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "country",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.country"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "city",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.city"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "address",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.address"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "vendor_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.vendor_num"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "vendor_group",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.vendor_group"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "material_group",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.material_group"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "spend_description",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.spend_description"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "po_no",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.po_no"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "purchase_po_item",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.po_item"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Material_no",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Material_no"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "net_price",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.net_price"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "purchase_quantity",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.quantity"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "gross_price",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.gross_price"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "deletion_flag",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.deletion_flag"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "completion_flag",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.completion_flag"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "invoice_posting_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.posting_date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "invoice_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.invoice_date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "invoice_no",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.invoice_no"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "invoice_doc_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.doc_type"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "vendor_no",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.vendor_no"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "invoice_line_description",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.invoice_line_description"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "invoice_po_number",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.po_number"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "invoice_po_item",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.po_item"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "invoice_material",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.material"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "invoice_amount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.amount"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "invoice_quantity",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.quantity"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "hints" : [ {
+          "id" : "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k",
+          "alias" : "in0",
+          "hintType" : "none",
+          "propagateColumns" : false
+        }, {
+          "id" : "-37jA2WeO8mUCYJapbYBh$$GTnzdsioeDL7Tik6nc0H_",
+          "alias" : "in1",
+          "hintType" : "none",
+          "propagateColumns" : false
+        } ],
+        "allIn1" : null,
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "-37jA2WeO8mUCYJapbYBh$$GTnzdsioeDL7Tik6nc0H_##po_number", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##purchase_ord_no", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##po_no", "-37jA2WeO8mUCYJapbYBh$$GTnzdsioeDL7Tik6nc0H_##amount", "-37jA2WeO8mUCYJapbYBh$$GTnzdsioeDL7Tik6nc0H_##doc_type", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##purchase_ord_no", "-37jA2WeO8mUCYJapbYBh$$GTnzdsioeDL7Tik6nc0H_##invoice_no", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##doc_type", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##gross_price", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##vendor_name", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##contract_start_date", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##creation_date", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##country", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##purchase_group", "-37jA2WeO8mUCYJapbYBh$$GTnzdsioeDL7Tik6nc0H_##quantity", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##address", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##spend_description", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##city", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##inco_terms1", "-37jA2WeO8mUCYJapbYBh$$GTnzdsioeDL7Tik6nc0H_##invoice_line_description", "-37jA2WeO8mUCYJapbYBh$$GTnzdsioeDL7Tik6nc0H_##invoice_date", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##po_item", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##net_price", "-37jA2WeO8mUCYJapbYBh$$GTnzdsioeDL7Tik6nc0H_##po_item", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##vendor_group", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##contract_end_date", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##Material_no", "-37jA2WeO8mUCYJapbYBh$$GTnzdsioeDL7Tik6nc0H_##po_number", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##quantity", "-37jA2WeO8mUCYJapbYBh$$GTnzdsioeDL7Tik6nc0H_##vendor_no", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##payment_terms", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##completion_flag", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##material_group", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##inco_terms2", "-37jA2WeO8mUCYJapbYBh$$GTnzdsioeDL7Tik6nc0H_##posting_date", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##vendor_num", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##purchase_org", "-37jA2WeO8mUCYJapbYBh$$GTnzdsioeDL7Tik6nc0H_##material", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##deletion_flag", "-O_QouStx5ystlifNd17R$$72tLGkGfNVrfrpV3BQx-k##currency" ],
+        "allIn0" : null,
+        "whereClause" : null,
+        "headAlias" : "in0"
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.12&projectSubscriptionProjectId=12654&path=gems/Join",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "p1RD0H_Jh6KUsh1soW0el$$zZ7HaDe8KfcJ1_vSfZ2-a" : {
+      "id" : "p1RD0H_Jh6KUsh1soW0el$$zZ7HaDe8KfcJ1_vSfZ2-a",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "dst_sap_gold_purchasing_document_item",
+        "slug" : "dst_sap_gold_purchasing_document_item",
+        "x" : -100,
+        "y" : 580,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "ddnHcwJwhUTpH7fnC9jfx$$VHm5aBZfyGxFvqyEjnTCL",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/dst_sap_gold_purchasing_document_item"
+      }
+    },
+    "XgVJFoFcw3Pz-QHuukKao$$KsbtmWqZrRdNSXfcxrjZL" : {
+      "id" : "XgVJFoFcw3Pz-QHuukKao$$KsbtmWqZrRdNSXfcxrjZL",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "by_vendor_number",
+        "slug" : "by_vendor_number",
+        "x" : -120,
+        "y" : 400,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "qfuDmV0uWuHAEHVzMHCWh$$JP14ySHp6RBFCENHWo9Qd",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "payment_terms",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "contract_start_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "contract_end_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "purchase_ord_no",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "doc_type",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "creation_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "purchase_org",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "purchase_group",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "currency",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "inco_terms1",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "inco_terms2",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "vendor_number",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        }, {
+          "id" : "vQTAI0KlDIVWhbcS1Mu7z$$o6sL2Oo0qTbDMONXaZ54U",
+          "slug" : "in1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "vendor_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "country",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "city",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "address",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "-VJx7WR7q0c22xuDLKYtJ$$82GZcr-Gk_kq1OJfu04zZ",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.vendor_number=in1.vendor_number"
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ {
+          "target" : "payment_terms",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.payment_terms"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "contract_start_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.contract_start_date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "contract_end_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.contract_end_date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "purchase_ord_no",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.purchase_ord_no"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "doc_type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.doc_type"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "creation_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.creation_date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "purchase_org",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.purchase_org"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "purchase_group",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.purchase_group"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "currency",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.currency"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "inco_terms1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.inco_terms1"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "inco_terms2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.inco_terms2"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "vendor_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.vendor_name"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "country",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.country"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "city",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.city"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "address",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.address"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "vendor_num",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.vendor_number"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "vendor_group",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.vendor_group"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "hints" : [ {
+          "id" : "qfuDmV0uWuHAEHVzMHCWh$$JP14ySHp6RBFCENHWo9Qd",
+          "alias" : "in0",
+          "hintType" : "none",
+          "propagateColumns" : false
+        }, {
+          "id" : "vQTAI0KlDIVWhbcS1Mu7z$$o6sL2Oo0qTbDMONXaZ54U",
+          "alias" : "in1",
+          "hintType" : "none",
+          "propagateColumns" : false
+        } ],
+        "allIn1" : null,
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "vQTAI0KlDIVWhbcS1Mu7z$$o6sL2Oo0qTbDMONXaZ54U##vendor_number", "qfuDmV0uWuHAEHVzMHCWh$$JP14ySHp6RBFCENHWo9Qd##vendor_number", "qfuDmV0uWuHAEHVzMHCWh$$JP14ySHp6RBFCENHWo9Qd##contract_start_date", "qfuDmV0uWuHAEHVzMHCWh$$JP14ySHp6RBFCENHWo9Qd##contract_end_date", "qfuDmV0uWuHAEHVzMHCWh$$JP14ySHp6RBFCENHWo9Qd##currency", "vQTAI0KlDIVWhbcS1Mu7z$$o6sL2Oo0qTbDMONXaZ54U##vendor_group", "qfuDmV0uWuHAEHVzMHCWh$$JP14ySHp6RBFCENHWo9Qd##purchase_ord_no", "qfuDmV0uWuHAEHVzMHCWh$$JP14ySHp6RBFCENHWo9Qd##purchase_org", "qfuDmV0uWuHAEHVzMHCWh$$JP14ySHp6RBFCENHWo9Qd##payment_terms", "vQTAI0KlDIVWhbcS1Mu7z$$o6sL2Oo0qTbDMONXaZ54U##address", "qfuDmV0uWuHAEHVzMHCWh$$JP14ySHp6RBFCENHWo9Qd##purchase_group", "qfuDmV0uWuHAEHVzMHCWh$$JP14ySHp6RBFCENHWo9Qd##doc_type", "vQTAI0KlDIVWhbcS1Mu7z$$o6sL2Oo0qTbDMONXaZ54U##country", "qfuDmV0uWuHAEHVzMHCWh$$JP14ySHp6RBFCENHWo9Qd##inco_terms1", "vQTAI0KlDIVWhbcS1Mu7z$$o6sL2Oo0qTbDMONXaZ54U##vendor_name", "vQTAI0KlDIVWhbcS1Mu7z$$o6sL2Oo0qTbDMONXaZ54U##vendor_number", "vQTAI0KlDIVWhbcS1Mu7z$$o6sL2Oo0qTbDMONXaZ54U##city", "qfuDmV0uWuHAEHVzMHCWh$$JP14ySHp6RBFCENHWo9Qd##creation_date", "qfuDmV0uWuHAEHVzMHCWh$$JP14ySHp6RBFCENHWo9Qd##inco_terms2" ],
+        "allIn0" : null,
+        "whereClause" : null,
+        "headAlias" : "in0"
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.12&projectSubscriptionProjectId=12654&path=gems/Join",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "VUw5uWiKULaZiHqYcIfpL$$55bARlf8L-utdNagtmFAi" : {
+      "id" : "VUw5uWiKULaZiHqYcIfpL$$55bARlf8L-utdNagtmFAi",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "dst_sap_gold_bo_invoice",
+        "slug" : "dst_sap_gold_bo_invoice",
+        "x" : 440,
+        "y" : 940,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "G5KhIrmT8aOwIJu4sGTq0$$8BM51feHzDJ-1DTWs_J0W",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "payment_terms",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "contract_start_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "contract_end_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "purchase_ord_no",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "purchase_doc_type",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "creation_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "purchase_org",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "purchase_group",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "currency",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "inco_terms1",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "inco_terms2",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "vendor_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "country",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "city",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "address",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "vendor_num",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "vendor_group",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "material_group",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "spend_description",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "po_no",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "purchase_po_item",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Material_no",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "net_price",
+              "type" : "decimal(38,10)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "purchase_quantity",
+              "type" : "decimal(38,10)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "gross_price",
+              "type" : "decimal(38,10)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "deletion_flag",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "completion_flag",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "invoice_posting_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "invoice_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "invoice_no",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "invoice_doc_type",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "vendor_no",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "invoice_line_description",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "invoice_po_number",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "invoice_po_item",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "invoice_material",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "invoice_amount",
+              "type" : "decimal(38,10)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "invoice_quantity",
+              "type" : "decimal(38,10)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/dst_sap_gold_bo_invoice"
+      }
+    },
+    "oDmyCTmouJtf2QGILdad_$$IIBaTiLUqwtdGOh3kHs0b" : {
+      "id" : "oDmyCTmouJtf2QGILdad_$$IIBaTiLUqwtdGOh3kHs0b",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "dst_sap_supplier_master",
+        "slug" : "dst_sap_supplier_master",
+        "x" : -380,
+        "y" : 600,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "6GgFtl-5aKqWXoPJBZqw8$$N3Dm3tmWd5SNEUPaeEVut",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/dst_sap_lfa1"
+      }
+    },
+    "TYJJtfHI8Yj_uBSx58O0G$$eLoqm4GsWG-iFxSa4-d5f" : {
+      "id" : "TYJJtfHI8Yj_uBSx58O0G$$eLoqm4GsWG-iFxSa4-d5f",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "dst_sap_gold_purchasing_document_header",
+        "slug" : "dst_sap_gold_purchasing_document_header",
+        "x" : -400,
+        "y" : 280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "P4OVXYPOm8pUSBnStktf9$$mE-TtIe-mlRT861NBbPHT",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/dst_sap_gold_purchasing_document_header"
+      }
+    },
+    "hU935eQ7crmWFk12XGYuv$$kB92XN3H1Fcz8AJ2zh-3a" : {
+      "id" : "hU935eQ7crmWFk12XGYuv$$kB92XN3H1Fcz8AJ2zh-3a",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "by_purchase_order_number",
+        "slug" : "by_purchase_order_number",
+        "x" : 100,
+        "y" : 400,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "qRyHbFMDeQz8HBG2r7eYf$$BSO2PFBlqgTs0T6Ba72Ws",
+          "slug" : "in0"
+        }, {
+          "id" : "jvrzRryRaZbPPabMW2YEB$$Y7voHgIJJgKVP3nVf5zcv",
+          "slug" : "in1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "material_group",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "spend_description",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "po_no",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "po_item",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Material_no",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "net_price",
+              "type" : "decimal(38,10)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "quantity",
+              "type" : "decimal(38,10)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "gross_price",
+              "type" : "decimal(38,10)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "deletion_flag",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "completion_flag",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "mSP4HN7Vmt2e8tWxE9xOG$$23mywn1Wy3h4Nup4zI-SW",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.purchase_ord_no=in1.po_no"
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ ],
+        "hints" : [ {
+          "id" : "qRyHbFMDeQz8HBG2r7eYf$$BSO2PFBlqgTs0T6Ba72Ws",
+          "alias" : "in0",
+          "hintType" : "none",
+          "propagateColumns" : false
+        }, {
+          "id" : "jvrzRryRaZbPPabMW2YEB$$Y7voHgIJJgKVP3nVf5zcv",
+          "alias" : "in1",
+          "hintType" : "none",
+          "propagateColumns" : false
+        } ],
+        "allIn1" : null,
+        "activeTab" : "conditions",
+        "columnsSelector" : [ "jvrzRryRaZbPPabMW2YEB$$Y7voHgIJJgKVP3nVf5zcv##po_no", "qRyHbFMDeQz8HBG2r7eYf$$BSO2PFBlqgTs0T6Ba72Ws##purchase_ord_no" ],
+        "allIn0" : null,
+        "whereClause" : null,
+        "headAlias" : "in0"
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.12&projectSubscriptionProjectId=12654&path=gems/Join",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "qJsC2ohhS677rF-m1IK4-$$fhgpgwgWH_z7X45Bh0wKw" : {
+      "id" : "qJsC2ohhS677rF-m1IK4-$$fhgpgwgWH_z7X45Bh0wKw",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "dss_sap_gold_bo",
+        "slug" : "dss_sap_gold_bo",
+        "x" : -20,
+        "y" : 740,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "E5Geveyfa94ggjDJ6PdmU$$yp9Dx4pKyQPyAglHCIHBp",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/dss_sap_gold_bo"
+      }
+    },
+    "nggpl-h7ida6Hcp0DWrgh$$Kk1Olur8gevh5-rx3ylrd" : {
+      "id" : "nggpl-h7ida6Hcp0DWrgh$$Kk1Olur8gevh5-rx3ylrd",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "dss_sap_gold_document_header",
+        "slug" : "dss_sap_gold_document_header",
+        "x" : -320,
+        "y" : 920,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "coNjvyZF4XVO9h3NpiSOV$$DxQ1gTmlHKHrO7eP5aoOo",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/dss_sap_gold_document_header"
+      }
+    },
+    "p78O1TVZkpY_3GTfrzK55$$FckuqCOoDPUEgQQi17wo2" : {
+      "id" : "p78O1TVZkpY_3GTfrzK55$$FckuqCOoDPUEgQQi17wo2",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "dss_sap_gold_document_item",
+        "slug" : "dss_sap_gold_document_item",
+        "x" : -320,
+        "y" : 1060,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "9IN2P1IdUNFYtgVf7742b$$DCPUzcevcjtltJ5VYsL-z",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/dss_sap_gold_document_item"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.XgVJFoFcw3Pz-QHuukKao$$KsbtmWqZrRdNSXfcxrjZL.properties.conditions[0].expression.expression",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "No match found for column in1.vendor_number [Conditions]",
+    "tags" : [ ],
+    "relatedInformation" : [ ],
+    "diagnosticType" : 1
+  }, {
+    "property" : "$.workflow.processes.XgVJFoFcw3Pz-QHuukKao$$KsbtmWqZrRdNSXfcxrjZL.properties.expressions[15].expression.expression",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "No match found for column in1.vendor_number [Expressions]",
+    "tags" : [ ],
+    "relatedInformation" : [ ],
+    "diagnosticType" : 1,
+    "diagnosticFix" : {
+      "fixType" : "CopilotDiagnosticFix",
+      "copilotFixType" : "expression"
+    }
+  }, {
+    "property" : "$.workflow.processes.XgVJFoFcw3Pz-QHuukKao$$KsbtmWqZrRdNSXfcxrjZL.properties.expressions[16].expression.expression",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "No match found for column in1.vendor_group [Expressions]",
+    "tags" : [ ],
+    "relatedInformation" : [ ],
+    "diagnosticType" : 1,
+    "diagnosticFix" : {
+      "fixType" : "CopilotDiagnosticFix",
+      "copilotFixType" : "expression"
+    }
+  }, {
+    "property" : "$.workflow.processes.hU935eQ7crmWFk12XGYuv$$kB92XN3H1Fcz8AJ2zh-3a",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ],
+    "diagnosticType" : 1
+  }, {
+    "property" : "$.workflow.processes.hU935eQ7crmWFk12XGYuv$$kB92XN3H1Fcz8AJ2zh-3a.properties.conditions[0].expression.expression",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "No match found for column in0.purchase_ord_no [Conditions]",
+    "tags" : [ ],
+    "relatedInformation" : [ ],
+    "diagnosticType" : 1
+  }, {
+    "property" : "$.workflow.processes.qSTlIFyh076m2UaLfRdPZ$$oI6H7urVubwCaxyFM959j",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ],
+    "diagnosticType" : 1
+  } ]
+}

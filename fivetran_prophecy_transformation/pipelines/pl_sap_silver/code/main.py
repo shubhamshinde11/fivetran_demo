@@ -1,3 +1,3 @@
-from pl_sap_silver.pipeline import main
+from pl_sap_bronze.pipeline import main
 
 main()

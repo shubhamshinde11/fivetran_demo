@@ -6,7 +6,7 @@
     "codeGenConfiguration" : {
       "editableConfig" : true,
       "plibVersion" : {
-        "mavenVersion" : "7.1.95",
+        "mavenVersion" : "7.1.96",
         "pyPiVersion" : "1.8.15"
       }
     },

@@ -65,21 +65,6 @@ pipelines:
       - datasets/ds_target_sg_transactions
     subgraphs: []
     dependencies: {}
-  pipelines/pl_sap_silver:
-    name: pl_sap_silver
-    description: ''
-    author: shubham@cloudaeon.net
-    mode: batch
-    artefactID: ''
-    language: python
-    createdAt: '2024-05-15 06:48:37'
-    datasets:
-      inputs:
-      - datasets/dss_sap_bs_bseg
-      outputs:
-      - datasets/dst_sap_bseg
-    subgraphs: []
-    dependencies: {}
   pipelines/pl_sap_bronze:
     name: pl_sap_bronze
     description: ''
@@ -115,6 +100,95 @@ pipelines:
       - datasets/dst_sap_prps
       - datasets/dst_sap_rbkp
       - datasets/dst_sap_rseg
+    subgraphs: []
+    dependencies: {}
+  pipelines/pl_spend_analytics:
+    name: pl_spend_analytics
+    description: ''
+    author: shubham@cloudaeon.net
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-05-18 08:50:40'
+    datasets:
+      inputs:
+      - datasets/dst_sap_bkpf
+      - datasets/dst_sap_bseg1
+      - datasets/dst_sap_lfa1
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+  pipelines/pl_sap_silver:
+    name: pl_sap_silver
+    description: ''
+    author: shubham@cloudaeon.net
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-05-18 09:27:08'
+    datasets:
+      inputs:
+      - datasets/ds_sap_ekko
+      - datasets/dss_sap_bask
+      - datasets/dss_sap_bkpf
+      - datasets/dss_sap_bs_bseg
+      - datasets/dss_sap_csks
+      - datasets/dss_sap_ekab
+      - datasets/dss_sap_ekkn
+      - datasets/dss_sap_ekpo
+      - datasets/dss_sap_lfa1
+      - datasets/dss_sap_mara
+      - datasets/dss_sap_prps
+      - datasets/dss_sap_rbkp
+      - datasets/dss_sap_rsegg
+      outputs:
+      - datasets/dst_sap_bask
+      - datasets/dst_sap_bkpf
+      - datasets/dst_sap_bseg1
+      - datasets/dst_sap_csks
+      - datasets/dst_sap_ekab
+      - datasets/dst_sap_ekkn
+      - datasets/dst_sap_ekko
+      - datasets/dst_sap_ekpo
+      - datasets/dst_sap_lfa1
+      - datasets/dst_sap_mara
+      - datasets/dst_sap_prps
+      - datasets/dst_sap_rbkp
+      - datasets/dst_sap_rseg
+    subgraphs: []
+    dependencies: {}
+  pipelines/pl_sap_gold:
+    name: pl_sap_gold
+    description: ''
+    author: shubham@cloudaeon.net
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-05-18 11:19:26'
+    datasets:
+      inputs:
+      - datasets/dss_sap_gold_bo
+      - datasets/dss_sap_gold_document_header
+      - datasets/dss_sap_gold_document_item
+      - datasets/dst_sap_gold_purchasing_document_header
+      - datasets/dst_sap_gold_purchasing_document_item
+      - datasets/dst_sap_lfa1
+      outputs:
+      - datasets/dst_sap_gold_BO_purchase
+      - datasets/dst_sap_gold_bo_invoice
+    subgraphs: []
+    dependencies: {}
+  pipelines/business_object_PO:
+    name: business_object_PO
+    description: ''
+    author: shubham@cloudaeon.net
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-05-18 11:50:14'
+    datasets:
+      inputs: []
+      outputs: []
     subgraphs: []
     dependencies: {}
 datasets:
@@ -548,7 +622,7 @@ datasets:
         author: shubham@cloudaeon.net
         createdAt: '2024-05-15 13:46:07'
   datasets/dst_sap_bseg1:
-    name: dst_sap_bseg1
+    name: dst_sap_document_item
     description: ''
     author: shubham@cloudaeon.net
     createdAt: '2024-05-15 14:07:36'
@@ -756,7 +830,7 @@ datasets:
         author: shubham@cloudaeon.net
         createdAt: '2024-05-16 14:00:12'
   datasets/dst_sap_ekko:
-    name: dst_sap_ekko
+    name: dst_sap_purchasing_document_header
     description: ''
     author: shubham@cloudaeon.net
     createdAt: '2024-05-16 14:04:20'
@@ -769,7 +843,7 @@ datasets:
         author: shubham@cloudaeon.net
         createdAt: '2024-05-16 14:04:20'
   datasets/dst_sap_ekpo:
-    name: dst_sap_ekpo
+    name: dst_sap_purchasing_document
     description: ''
     author: shubham@cloudaeon.net
     createdAt: '2024-05-16 14:13:31'
@@ -782,7 +856,7 @@ datasets:
         author: shubham@cloudaeon.net
         createdAt: '2024-05-16 14:13:31'
   datasets/dst_sap_lfa1:
-    name: dst_sap_lfa1
+    name: dst_sap_supplier_master
     description: ''
     author: shubham@cloudaeon.net
     createdAt: '2024-05-16 14:17:34'
@@ -808,7 +882,7 @@ datasets:
         author: shubham@cloudaeon.net
         createdAt: '2024-05-16 14:20:29'
   datasets/dst_sap_rbkp:
-    name: dst_sap_rbkp
+    name: dst_sap_document_header
     description: ''
     author: shubham@cloudaeon.net
     createdAt: '2024-05-16 14:25:05'
@@ -859,6 +933,175 @@ datasets:
         description: ''
         author: shubham@cloudaeon.net
         createdAt: '2024-05-16 14:34:37'
+  datasets/dss_sap_silver_bseg:
+    name: dss_sap_silver_bseg
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-18 06:14:27'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-18 06:14:27'
+  datasets/dss_sap_silver_bkpf:
+    name: dss_sap_silver_bkpf
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-18 06:20:26'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-18 06:20:26'
+  datasets/dss_sap_mara:
+    name: dss_sap_mara
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-18 10:08:56'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: File
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-18 10:08:57'
+  datasets/dst_sap_mara:
+    name: dst_sap_mara
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-18 10:53:54'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-18 10:53:54'
+  datasets/dss_sap_gold_rbkp:
+    name: dss_sap_gold_rbkp
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-18 11:37:57'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-18 11:37:57'
+  datasets/dss_sap_gold_rseg:
+    name: dss_sap_gold_rseg
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-18 11:39:10'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-18 11:39:10'
+  datasets/dst_sap_gold_purchasing_document_item:
+    name: dst_sap_gold_purchasing_document_item
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-18 12:07:57'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-18 12:07:57'
+  datasets/dst_sap_gold_purchasing_document_header:
+    name: dst_sap_gold_purchasing_document_header
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-18 12:13:26'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-18 12:13:26'
+  datasets/dst_sap_gold_BO_purchase:
+    name: dst_sap_gold_BO_purchase
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-18 12:31:09'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-18 12:31:09'
+  datasets/dss_sap_gold_document_header:
+    name: dss_sap_gold_document_header
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-18 12:38:18'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-18 12:38:18'
+  datasets/dss_sap_gold_document_item:
+    name: dss_sap_gold_document_item
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-18 12:40:37'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-18 12:40:37'
+  datasets/dss_sap_gold_bo:
+    name: dss_sap_gold_bo
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-18 12:48:09'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-18 12:48:09'
+  datasets/dst_sap_gold_bo_invoice:
+    name: dst_sap_gold_bo_invoice
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-18 12:51:27'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-18 12:51:27'
 templates: {}
 jobs: {}
 gemContainer:
@@ -883,17 +1126,17 @@ sqlUnreferencedSources: {}
 sqlPipeline: null
 dependencies:
 - type: plibMaven
-  modifiedAt: '2024-05-15T14:00:03.199559Z'
+  modifiedAt: '2024-05-18T11:50:22.037417Z'
   name: plibMaven
-  version: 7.1.95
-  id: '562997867'
-  createdAt: '2024-05-15T14:00:03.199448Z'
+  version: 7.1.96
+  id: '1791087409'
+  createdAt: '2024-05-18T11:50:22.037287Z'
 - type: plibPypi
-  modifiedAt: '2024-05-15T14:00:03.199677Z'
+  modifiedAt: '2024-05-18T11:50:22.037486Z'
   name: plibPypi
   version: 1.8.15
-  id: '2055311183'
-  createdAt: '2024-05-15T14:00:03.199646Z'
+  id: '383130362'
+  createdAt: '2024-05-18T11:50:22.037465Z'
 projectDependencies:
   '12654':
     projectUID: 12654
