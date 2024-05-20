@@ -10,5 +10,5 @@ def dst_sap_rseg(spark: SparkSession, in0: DataFrame):
     in0.write\
         .format("delta")\
         .option("path", "dbfs:/mnt/fivetran/sap_adls/silver/document_item")\
-        .mode("append")\
+        .mode("overwrite")\
         .saveAsTable("`sap_silver_db`.`document_item`")

@@ -7,4 +7,4 @@ from pl_sap_bronze.config.ConfigStore import *
 from pl_sap_bronze.udfs.UDFs import *
 
 def dst_sap_csks(spark: SparkSession, in0: DataFrame):
-    in0.write.format("delta").mode("append").saveAsTable("`sap_db`.`costcentre_tbl`")
+    in0.write.format("delta").mode("overwrite").saveAsTable("`sap_db`.`costcentre_tbl`")

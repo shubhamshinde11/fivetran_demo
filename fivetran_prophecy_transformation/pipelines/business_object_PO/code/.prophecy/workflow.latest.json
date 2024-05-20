@@ -72,14 +72,14 @@
   },
   "connections" : [ ],
   "processes" : {
-    "Szgi3LT8dUB8vszFcismW$$6yZgwt-1IOjdcdc32_O3z" : {
-      "id" : "Szgi3LT8dUB8vszFcismW$$6yZgwt-1IOjdcdc32_O3z",
+    "d3STomGtcvw48ULAF1rQE$$WLvBnsYfgyij1rlsJ2e71" : {
+      "id" : "d3STomGtcvw48ULAF1rQE$$WLvBnsYfgyij1rlsJ2e71",
       "component" : "Source",
       "metadata" : {
-        "label" : "Source_0",
-        "slug" : "Source_0",
-        "x" : -520,
-        "y" : -180,
+        "label" : "dss_sap_csks",
+        "slug" : "dss_sap_csks",
+        "x" : -1020,
+        "y" : -300,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -88,14 +88,16 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "COVl3H330HpbjNsvzM9I5$$B0yV_ItbRNBwlzvIEZvFt",
+          "id" : "_aaDeNjh5hivx5z3KlYQj$$FTjI40Y6n7Lr6Rz-HTUKc",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       },
-      "properties" : { }
+      "properties" : {
+        "datasetId" : "datasets/dss_sap_csks"
+      }
     }
   },
   "ports" : {
@@ -104,23 +106,5 @@
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  },
-  "diagnostics" : [ {
-    "property" : "$.workflow.processes.Szgi3LT8dUB8vszFcismW$$6yZgwt-1IOjdcdc32_O3z.properties.datasetId",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "dataset id missing",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  } ]
+  }
 }

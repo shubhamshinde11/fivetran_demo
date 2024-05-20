@@ -129,30 +129,20 @@ pipelines:
     datasets:
       inputs:
       - datasets/ds_sap_ekko
-      - datasets/dss_sap_bask
       - datasets/dss_sap_bkpf
       - datasets/dss_sap_bs_bseg
-      - datasets/dss_sap_csks
-      - datasets/dss_sap_ekab
-      - datasets/dss_sap_ekkn
       - datasets/dss_sap_ekpo
       - datasets/dss_sap_lfa1
       - datasets/dss_sap_mara
-      - datasets/dss_sap_prps
       - datasets/dss_sap_rbkp
       - datasets/dss_sap_rsegg
       outputs:
-      - datasets/dst_sap_bask
       - datasets/dst_sap_bkpf
       - datasets/dst_sap_bseg1
-      - datasets/dst_sap_csks
-      - datasets/dst_sap_ekab
-      - datasets/dst_sap_ekkn
       - datasets/dst_sap_ekko
       - datasets/dst_sap_ekpo
       - datasets/dst_sap_lfa1
       - datasets/dst_sap_mara
-      - datasets/dst_sap_prps
       - datasets/dst_sap_rbkp
       - datasets/dst_sap_rseg
     subgraphs: []
@@ -187,7 +177,8 @@ pipelines:
     language: python
     createdAt: '2024-05-18 11:50:14'
     datasets:
-      inputs: []
+      inputs:
+      - datasets/dss_sap_csks
       outputs: []
     subgraphs: []
     dependencies: {}
@@ -1103,7 +1094,33 @@ datasets:
         author: shubham@cloudaeon.net
         createdAt: '2024-05-18 12:51:27'
 templates: {}
-jobs: {}
+jobs:
+  jobs/trigger:
+    name: trigger
+    description: ''
+    fabricUID: 11913
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: 0 0/30 * * * ? *
+    timeout: null
+    alerting:
+      emails: shubham@cloudaeon.net
+      onStart: true
+      onSuccess: true
+      onFailure: true
+    pipelines:
+    - pipelines/pl_sap_silver
+    - pipelines/pl_sap_gold
+    - pipelines/business_object_PO
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: true
+    createdAt: '2024-05-20 08:25:39'
+    author: shubham@cloudaeon.net
 gemContainer:
   languageVersion: '3.10'
   gemLibsVersion: 1.3.4.0

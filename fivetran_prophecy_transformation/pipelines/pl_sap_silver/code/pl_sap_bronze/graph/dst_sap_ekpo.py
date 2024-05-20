@@ -10,5 +10,5 @@ def dst_sap_ekpo(spark: SparkSession, in0: DataFrame):
     in0.write\
         .format("delta")\
         .option("path", "dbfs:/mnt/fivetran/sap_adls/silver/purchasing_document_item")\
-        .mode("append")\
+        .mode("overwrite")\
         .saveAsTable("`sap_silver_db`.`purchasing_document_item`")
