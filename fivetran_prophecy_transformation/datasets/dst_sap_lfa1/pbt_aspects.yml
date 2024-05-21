@@ -30,3 +30,17 @@ schema:
       description: ''
       mappings: []
       tags: []
+  - name: vendor_number
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: vendor_group
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

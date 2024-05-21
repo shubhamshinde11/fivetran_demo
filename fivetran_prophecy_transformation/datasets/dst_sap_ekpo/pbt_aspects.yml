@@ -16,3 +16,59 @@ schema:
       description: ''
       mappings: []
       tags: []
+  - name: po_no
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: po_item
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Material_no
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: net_price
+    type: decimal(38,10)
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: quantity
+    type: decimal(38,10)
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: gross_price
+    type: decimal(38,10)
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: deletion_flag
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: completion_flag
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

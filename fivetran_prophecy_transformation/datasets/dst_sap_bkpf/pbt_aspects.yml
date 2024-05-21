@@ -9,7 +9,7 @@ schema:
       description: ''
       mappings: []
       tags: []
-  - name: prepay_doc
+  - name: doc_no
     type: string
     nullable: true
     metadata:
@@ -31,6 +31,41 @@ schema:
       mappings: []
       tags: []
   - name: fiscal_year
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: doc_type
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: entered_on
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: period
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: posting_date
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: currency
     type: string
     nullable: true
     metadata:
