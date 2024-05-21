@@ -7,4 +7,4 @@ from business_object_po.config.ConfigStore import *
 from business_object_po.udfs.UDFs import *
 
 def dss_sap_csks(spark: SparkSession) -> DataFrame:
-    return spark.read.format("delta").load("dbfs:/mnt/fivetran/sap_adls/sap_adls_data_saphanadb/csks/")
+    return spark.read.format("delta").load("dbfs:/mnt/fivetran/sap_adls/sap_adls_data_21may_saphanadb/csks/")

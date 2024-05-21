@@ -7,4 +7,4 @@ from pl_sap_bronze.config.ConfigStore import *
 from pl_sap_bronze.udfs.UDFs import *
 
 def dss_sap_ekab(spark: SparkSession) -> DataFrame:
-    return spark.read.format("delta").load("dbfs:/mnt/fivetran/sap_adls/sap_adls_data_saphanadb/ekab/")
+    return spark.read.format("delta").load("dbfs:/mnt/fivetran/sap_adls/sap_adls_data_21may_saphanadb/ekab/")
