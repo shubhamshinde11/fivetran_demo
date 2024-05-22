@@ -10,11 +10,11 @@
     }
   }, {
     "PipelineComponent" : {
-      "path" : "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/pl_sap_silver-1.0-py3-none-any.whl",
+      "path" : "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/pl_sap_silver2-1.0-py3-none-any.whl",
       "nodeName" : "pl_sap_silver",
       "id" : "Onqtw9_MwajE_8XTFhI04",
       "language" : "python",
-      "pipelineId" : "pipelines/pl_sap_silver"
+      "pipelineId" : "pipelines/pl_sap_silver2"
     }
   }, {
     "PipelineComponent" : {
@@ -46,7 +46,7 @@
           "spark.prophecy.metadata.is.interactive.run" : "false",
           "spark.prophecy.project.id" : "__PROJECT_ID_PLACEHOLDER__",
           "spark.prophecy.metadata.user.id" : "5720",
-          "spark.prophecy.tasks" : "H4sIAAAAAAAAAKtWKsiJL04siC/OzClLLVKyUirILEjNycxLLdZHldGBqUzPz0nBpg4sDleVVJSfV5WKoi6ptBhEF8fnJ2WlJpfEB/gr1QIAPzRThoAAAAA=",
+          "spark.prophecy.tasks" : "H4sIAAAAAAAAAKtWKsiJL04siC/OzClLLVKyUirILEjNycxLLdZHkTFS0oEpTc/PScGmECwOV5VUlJ9XlYqiLqm0GEQXx+cnZaUml8QH+CvVAgBVvPEkgQAAAA==",
           "spark.prophecy.metadata.job.branch" : "__PROJECT_RELEASE_VERSION_PLACEHOLDER__",
           "spark.prophecy.metadata.url" : "__PROPHECY_URL_PLACEHOLDER__",
           "spark.prophecy.execution.metrics.disabled" : "true",
@@ -97,7 +97,7 @@
       } ],
       "job_cluster_key" : "trigger_default_small",
       "python_wheel_task" : {
-        "package_name" : "pl_sap_silver",
+        "package_name" : "pl_sap_silver2",
         "entry_point" : "main",
         "parameters" : [ "-i", "default", "-O", "{}" ]
       },
@@ -110,7 +110,7 @@
           "package" : "prophecy-libs==1.8.15"
         }
       }, {
-        "whl" : "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/pl_sap_silver-1.0-py3-none-any.whl"
+        "whl" : "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/pl_sap_silver2-1.0-py3-none-any.whl"
       } ],
       "email_notifications" : { },
       "max_retries" : 0
@@ -141,10 +141,11 @@
     } ],
     "max_concurrent_runs" : 1,
     "schedule" : {
-      "quartz_cron_expression" : "0 0/30 * * * ? *",
+      "quartz_cron_expression" : "0 0/15 * * * ? *",
       "timezone_id" : "UTC",
       "pause_status" : "UNPAUSED"
-    }
+    },
+    "access_control_list" : [ ]
   },
   "cluster_mode" : {
     "clusterMode" : "Single"

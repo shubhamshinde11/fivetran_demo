@@ -16743,31 +16743,6 @@
         "datasetId" : "datasets/dst_sap_ekko"
       }
     },
-    "94qiJEypF5Nt8JQrYn571$$HbrLAgEEuP13qZ4xua1Pc" : {
-      "id" : "94qiJEypF5Nt8JQrYn571$$HbrLAgEEuP13qZ4xua1Pc",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "Source_1",
-        "slug" : "Source_1",
-        "x" : -1120,
-        "y" : -60,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "F3Y0KEFH0ygVzPVDARBwk$$f2BvXK5Pew1nrsH2ri8np",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : { }
-    },
     "l7EqV81q_7D5lD7mvWKn9$$f0GtcE08Mr1A8w0hAf3tS" : {
       "id" : "l7EqV81q_7D5lD7mvWKn9$$f0GtcE08Mr1A8w0hAf3tS",
       "component" : "Source",
@@ -22645,23 +22620,5 @@
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  },
-  "diagnostics" : [ {
-    "property" : "$.workflow.processes.94qiJEypF5Nt8JQrYn571$$HbrLAgEEuP13qZ4xua1Pc.properties.datasetId",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "dataset id missing",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  } ]
+  }
 }

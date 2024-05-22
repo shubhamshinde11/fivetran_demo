@@ -4216,8 +4216,7 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false,
-        "removalCondition" : "false"
+        "isImported" : false
       },
       "ports" : {
         "inputs" : [ ],
@@ -4244,8 +4243,7 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false,
-        "removalCondition" : "false"
+        "isImported" : false
       },
       "ports" : {
         "inputs" : [ ],
@@ -8557,8 +8555,7 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false,
-        "removalCondition" : "false"
+        "isImported" : false
       },
       "ports" : {
         "inputs" : [ ],

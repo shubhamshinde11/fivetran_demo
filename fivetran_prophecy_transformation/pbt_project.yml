@@ -182,6 +182,23 @@ pipelines:
       outputs: []
     subgraphs: []
     dependencies: {}
+  pipelines/pl_sap_silver2:
+    name: pl_sap_silver2
+    description: ''
+    author: shubham@cloudaeon.net
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-05-20 12:12:28'
+    datasets:
+      inputs:
+      - datasets/ds_sap_ekko
+      - datasets/dss_sap_ekpo
+      outputs:
+      - datasets/dst_sap_ekko
+      - datasets/dst_sap_ekpo
+    subgraphs: []
+    dependencies: {}
 datasets:
   datasets/ds_bronze_silver_oil:
     name: ds_source_bs_oil
@@ -1103,7 +1120,7 @@ jobs:
       Databricks: {}
     cloudProvider: null
     jobSize: small
-    scheduleCron: 0 0/30 * * * ? *
+    scheduleCron: 0 0/15 * * * ? *
     timeout: null
     alerting:
       emails: shubham@cloudaeon.net
@@ -1111,7 +1128,7 @@ jobs:
       onSuccess: true
       onFailure: true
     pipelines:
-    - pipelines/pl_sap_silver
+    - pipelines/pl_sap_silver2
     - pipelines/pl_sap_gold
     - pipelines/business_object_PO
     jobClusterMode:
@@ -1136,6 +1153,7 @@ functions:
 subgraphs: {}
 sqlModels: {}
 sqlSnapshots: {}
+sqlTests: {}
 sqlMacros: {}
 sqlSeeds: {}
 sqlSources: {}
