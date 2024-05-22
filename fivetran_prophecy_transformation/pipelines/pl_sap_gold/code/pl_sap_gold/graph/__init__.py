@@ -5,6 +5,7 @@ from .dst_sap_supplier_master import dst_sap_supplier_master
 from .by_invoice_no import by_invoice_no
 from .dst_sap_gold_purchasing_document_item import dst_sap_gold_purchasing_document_item
 from .dst_sap_gold_bo_invoice import dst_sap_gold_bo_invoice
+from .dst_sap_supplier_master12 import dst_sap_supplier_master12
 from .by_vendor_number import by_vendor_number
 from .dss_sap_gold_document_header import dss_sap_gold_document_header
 from .dst_sap_gold_purchasing_document_header import dst_sap_gold_purchasing_document_header

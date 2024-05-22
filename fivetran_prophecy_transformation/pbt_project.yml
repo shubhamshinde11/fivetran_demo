@@ -163,6 +163,7 @@ pipelines:
       - datasets/dst_sap_gold_purchasing_document_header
       - datasets/dst_sap_gold_purchasing_document_item
       - datasets/dst_sap_lfa1
+      - datasets/dst_sap_supplier_master12
       outputs:
       - datasets/dst_sap_gold_BO_purchase
       - datasets/dst_sap_gold_bo_invoice
@@ -1110,6 +1111,19 @@ datasets:
         description: ''
         author: shubham@cloudaeon.net
         createdAt: '2024-05-18 12:51:27'
+  datasets/dst_sap_supplier_master12:
+    name: dst_sap_supplier_master12
+    description: ''
+    author: shubham@cloudaeon.net
+    createdAt: '2024-05-22 11:04:04'
+    mode: batch
+    physicalDatasets:
+      Fabric_Shubham:
+        fabricId: 11913
+        datasetType: Database
+        description: ''
+        author: shubham@cloudaeon.net
+        createdAt: '2024-05-22 11:04:04'
 templates: {}
 jobs:
   jobs/trigger:
