@@ -4,7 +4,7 @@
     "fabricId" : "11913",
     "jobId" : "jobs/trigger",
     "name" : "trigger",
-    "schedule" : "0 0/15 * * * ? *",
+    "schedule" : "0 0/30 * * * ? *",
     "scheduleTimeZone" : "UTC",
     "jobClusterMode" : {
       "clusterMode" : "Single"
@@ -54,8 +54,7 @@
       "scalalibsResolutionMode" : {
         "PublicCentral" : { }
       }
-    } ],
-    "accessControlList" : [ ]
+    } ]
   },
   "processes" : {
     "Onqtw9_MwajE_8XTFhI04" : {
@@ -87,7 +86,7 @@
         }
       },
       "properties" : {
-        "pipelineId" : "pipelines/pl_sap_silver2",
+        "pipelineId" : "pipelines/pl_sap_silver",
         "configurations" : {
           "schema" : [ ],
           "instances" : {

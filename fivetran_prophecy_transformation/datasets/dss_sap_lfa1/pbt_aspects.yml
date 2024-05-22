@@ -16,35 +16,63 @@ schema:
       description: ''
       mappings: []
       tags: []
-  - name: actss
+  - name: telx1
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: uptim
+  - name: revdb
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: lnrza
+  - name: ppa_relevant
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: addr2_house_num
+  - name: sc_capital
+    type: decimal(38,10)
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: ltsna
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: lfurl
+  - name: regio
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: psovn
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: pson1
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: qssysdat
     type: string
     nullable: true
     metadata:
@@ -65,524 +93,6 @@ schema:
       description: ''
       mappings: []
       tags: []
-  - name: pson1
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: vfnid
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: psovn
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: regio
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: ltsna
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: telx1
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: name2
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: ppa_relevant
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: comsize
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: j_1issist
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: categ
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: au_wholly_inp_taxed
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: entpub
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: scheduling_type
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: sperr
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: datlt
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: psost
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: cvp_xblck
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: pfach
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: au_private_hobby
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: telf1
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: stcd2
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: fr_occupation
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: j_1ivtyp
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: decregpc
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: addr2_city
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: j_1kftbus
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: j_1ipanno
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: telfx
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: submi_relevant
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: ipisp
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: carrier_conf
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: sexkz
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: dlgrp
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: uf
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: exp
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: confs
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: xlfza
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: werkr
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: j_1iexco
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: name1
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: psofg
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: partner_utr
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: transport_chain
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: tdt
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: j_1kftind
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: sperz
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: xzemp
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: dvalss
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: rgdate
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: mcod3
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: j_1isern
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: erdat
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: txjcd
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: j_1ipanref
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: werks
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: escrit
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: crn
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: rne
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: esrnr
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: sam_ue_id
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: kunnr
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: j_1iexcive
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: addr2_post
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: alc
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: stkzu
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: sc_currency
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: gbort
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: bubkz
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: land1
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: psotl
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: fisku
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: rg
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: paytrsn
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
   - name: j_sc_capital
     type: decimal(38,10)
     nullable: true
@@ -590,266 +100,98 @@ schema:
       description: ''
       mappings: []
       tags: []
-  - name: stcd4
+  - name: lfurl
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: nodel
+  - name: borgr_datun
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: psois
+  - name: addr2_house_num
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: j_1kfrepre
+  - name: lnrza
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: sc_capital
-    type: decimal(38,10)
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: ort02
+  - name: actss
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: term_li
+  - name: j_1idedref
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: usnam
+  - name: sperm
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: crtn
+  - name: frmcss
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: telbx
+  - name: ven_class
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: au_carrying_ent
+  - name: weora
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: ric
+  - name: j_1ilstno
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: stcd6
+  - name: dtams
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: ktokk
+  - name: ktock
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: fiskn
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: fityp
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: mcod2
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: j_1iexrn
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: pson3
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: allowance_type
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: aedat
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: name4
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: au_payment_exempt
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: icmstaxpay
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: profs
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: au_payment_not_exceed_75
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: ausdiv
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: adrnr
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: stcd1
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: xcpdk
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: stkza
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: au_not_entitled_abn
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: staging_time
-    type: decimal(38,10)
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: j_1ipanvaldt
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: bbbnr
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: j_1iexdi
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: indtyp
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: kraus
+  - name: j_1icstno
     type: string
     nullable: true
     metadata:
@@ -863,49 +205,371 @@ schema:
       description: ''
       mappings: []
       tags: []
-  - name: j_sc_currency
+  - name: sfrgr
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: crc_num
+  - name: lzone
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: teltx
+  - name: telf2
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: legalnat
+  - name: addr2_street
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: stcd3
+  - name: psohs
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: stcdt
+  - name: stras
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: dtaws
+  - name: cnae
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: brsch
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: loevm
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: j_1ipanvaldt
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: begru
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: vfnum
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: partner_name
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: podkzb
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: stcd5
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: stceg
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: qssys
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: pfort
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: anred
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: j_1iexrg
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: pmt_office
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: stgdl
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: pstlz
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: j_1iexcd
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: bahns
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: aedat
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: stenr
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: sortl
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: au_partner_without_gain
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: name3
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: sperq
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: duefl
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: ernam
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: status
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: konzs
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: taxbs
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: codcae
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: regss
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: pson2
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: plkal
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: mcod1
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: lfa1_eew_supp
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: bbsnr
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: addr2_country
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: scacd
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: au_domestic_nature
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: sam_eft_ind
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: borgr_yeaun
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: stkzn
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: emnfr
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: j_1ivencre
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: j_1i_customs
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: ort01
     type: string
     nullable: true
     metadata:
@@ -933,343 +597,658 @@ schema:
       description: ''
       mappings: []
       tags: []
-  - name: ort01
+  - name: dtaws
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: j_1i_customs
+  - name: stcdt
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: j_1ivencre
+  - name: stcd3
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: borgr_datun
+  - name: legalnat
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: emnfr
+  - name: crc_num
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: stkzn
+  - name: j_sc_currency
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: borgr_yeaun
+  - name: teltx
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: qssysdat
+  - name: kraus
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: au_domestic_nature
+  - name: indtyp
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: scacd
+  - name: j_1iexdi
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: sam_eft_ind
+  - name: bbbnr
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: addr2_country
+  - name: au_not_entitled_abn
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: duefl
+  - name: stkza
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: lfa1_eew_supp
+  - name: xcpdk
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: sperq
+  - name: ausdiv
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: bbsnr
+  - name: adrnr
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: regss
+  - name: stcd1
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: taxbs
+  - name: au_payment_not_exceed_75
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: ernam
+  - name: profs
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: revdb
+  - name: icmstaxpay
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: codcae
+  - name: name4
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: pson2
+  - name: au_payment_exempt
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: plkal
+  - name: erdat
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: konzs
+  - name: allowance_type
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: status
+  - name: rgdate
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: mcod1
+  - name: pson3
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: name3
+  - name: mcod2
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: au_partner_without_gain
+  - name: j_1iexrn
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: sortl
+  - name: dvalss
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: stenr
+  - name: fiskn
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: stgdl
+  - name: stcd6
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: bahns
+  - name: fityp
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: pstlz
+  - name: ktokk
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: j_1iexcd
+  - name: au_carrying_ent
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: pmt_office
+  - name: telbx
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: qssys
+  - name: ric
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: anred
+  - name: crtn
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: j_1iexrg
+  - name: usnam
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: stcd5
+  - name: term_li
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: pfort
+  - name: ort02
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: stceg
+  - name: j_1kfrepre
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: podkzb
+  - name: psois
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: updat
+  - name: nodel
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: partner_name
+  - name: stcd4
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: begru
+  - name: paytrsn
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: vfnum
+  - name: fisku
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: stras
+  - name: rg
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: sfrgr
+  - name: psotl
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: cnae
+  - name: land1
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: bubkz
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: gbort
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: sc_currency
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: stkzu
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: j_1iexcive
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: addr2_post
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: alc
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: sam_ue_id
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: kunnr
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: esrnr
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: rne
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: crn
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: escrit
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: werks
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: j_1ipanref
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: txjcd
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: mcod3
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: j_1isern
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: xzemp
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: sperz
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: j_1kftind
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: tdt
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: transport_chain
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: partner_utr
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: psofg
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: name1
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: xlfza
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: j_1iexco
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: werkr
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: exp
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: uf
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: dlgrp
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: confs
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: sexkz
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: carrier_conf
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: ipisp
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: telfx
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: staging_time
+    type: decimal(38,10)
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: submi_relevant
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: uptim
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: j_1ipanno
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: j_1kftbus
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: decregpc
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: j_1ivtyp
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: fr_occupation
     type: string
     nullable: true
     metadata:
@@ -1283,105 +1262,126 @@ schema:
       description: ''
       mappings: []
       tags: []
-  - name: loevm
+  - name: stcd2
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: brsch
+  - name: addr2_city
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: telf2
+  - name: telf1
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: lzone
+  - name: au_private_hobby
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: psohs
+  - name: updat
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: addr2_street
+  - name: psost
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: j_1ilstno
+  - name: pfach
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: j_1icstno
+  - name: cvp_xblck
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: ktock
+  - name: datlt
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: dtams
+  - name: sperr
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: weora
+  - name: scheduling_type
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: ven_class
+  - name: entpub
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: frmcss
+  - name: au_wholly_inp_taxed
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: j_1idedref
+  - name: j_1issist
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: sperm
+  - name: categ
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: vfnid
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: comsize
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: name2
     type: string
     nullable: true
     metadata:

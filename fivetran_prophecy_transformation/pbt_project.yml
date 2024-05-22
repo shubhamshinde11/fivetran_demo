@@ -1134,7 +1134,7 @@ jobs:
       Databricks: {}
     cloudProvider: null
     jobSize: small
-    scheduleCron: 0 0/15 * * * ? *
+    scheduleCron: 0 0/30 * * * ? *
     timeout: null
     alerting:
       emails: shubham@cloudaeon.net
@@ -1142,7 +1142,7 @@ jobs:
       onSuccess: true
       onFailure: true
     pipelines:
-    - pipelines/pl_sap_silver2
+    - pipelines/pl_sap_silver
     - pipelines/pl_sap_gold
     - pipelines/business_object_PO
     jobClusterMode:
