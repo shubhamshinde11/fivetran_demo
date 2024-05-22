@@ -16,3 +16,24 @@ schema:
       description: ''
       mappings: []
       tags: []
+  - name: invoice_no
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: doc_type
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: vendor_no
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

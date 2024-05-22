@@ -9,8 +9,43 @@ schema:
       description: ''
       mappings: []
       tags: []
-  - name: prepay_doc
+  - name: invoice_no
     type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: po_number
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: po_item
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: material
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: amount
+    type: decimal(38,10)
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: quantity
+    type: decimal(38,10)
     nullable: true
     metadata:
       description: ''
