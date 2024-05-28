@@ -162,7 +162,6 @@ pipelines:
       - datasets/dss_sap_gold_document_item
       - datasets/dst_sap_gold_purchasing_document_header
       - datasets/dst_sap_gold_purchasing_document_item
-      - datasets/dst_sap_lfa1
       - datasets/dst_sap_supplier_master12
       outputs:
       - datasets/dst_sap_gold_BO_purchase

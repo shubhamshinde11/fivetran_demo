@@ -2181,33 +2181,6 @@
         "datasetId" : "datasets/dst_sap_gold_bo_invoice"
       }
     },
-    "oDmyCTmouJtf2QGILdad_$$IIBaTiLUqwtdGOh3kHs0b" : {
-      "id" : "oDmyCTmouJtf2QGILdad_$$IIBaTiLUqwtdGOh3kHs0b",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "dst_sap_supplier_master",
-        "slug" : "dst_sap_supplier_master",
-        "x" : -580,
-        "y" : 460,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "6GgFtl-5aKqWXoPJBZqw8$$N3Dm3tmWd5SNEUPaeEVut",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/dst_sap_lfa1"
-      }
-    },
     "TYJJtfHI8Yj_uBSx58O0G$$eLoqm4GsWG-iFxSa4-d5f" : {
       "id" : "TYJJtfHI8Yj_uBSx58O0G$$eLoqm4GsWG-iFxSa4-d5f",
       "component" : "Source",
